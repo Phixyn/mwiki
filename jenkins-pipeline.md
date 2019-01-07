@@ -1,30 +1,29 @@
-# Groovy Cheatsheet
+# Jenkins Pipeline Cheatsheet
 
 ## Archiving Artifacts
 
 ```groovy
-// Always use double quotes with string interpolation
 archiveArtifacts artifacts: "**/${env.RESULTS_ARCHIVE}"
 ```
+
+_**Note:** Always use double quotes with string interpolation._
 
 ## Variables
 
 ### Global Variables
 
 ```groovy
-// Global and mutable variables need to be outside of the pipeline
-
 VAR="value"
 pipeline {
     // ...
 }
 ```
 
+Global and mutable variables need to be outside of the pipeline.
+
 ### Environment Variables
 
 ```groovy
-// Environment variables can only be modified temporarily with a "withEnv" block
-
 pipeline {
     environment {
         VAR="VALUE"
@@ -40,6 +39,8 @@ pipeline {
     }
 }
 ```
+
+Environment variables can only be modified temporarily with a `withEnv` block.
 
 ### Variables Inside Script Block (?)
 
