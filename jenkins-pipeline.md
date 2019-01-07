@@ -47,3 +47,25 @@ Environment variables can only be modified temporarily with a `withEnv` block.
 ```groovy
 var = sh([script: "echo 'Variable value'", returnStdout: true]).trim()
 ```
+
+## Triggers
+
+### Conditional Triggers
+
+```groovy
+pipeline {
+    agent "your-agent"
+    triggers {
+        cron(env.BRANCH_NAME == "master" ? "0 23 * * *" : "")
+    }
+    stage {
+        // ...
+    }
+}
+```
+
+Triggers a build on the `master` branch every night at 23:00. A build will only be triggered for the `master` branch, and no other branches in a multibranch pipeline.
+
+_See also:_
+* [Source](https://issues.jenkins-ci.org/browse/JENKINS-42643?focusedCommentId=293221#comment-293221)
+* [crontab guru](https://crontab.guru/)
