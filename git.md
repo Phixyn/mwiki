@@ -8,8 +8,8 @@
     - [List Merged Branches](#list-merged-branches)
     - [Delete Remote Branch/Tag](#delete-remote-branchtag)
 - [Refs](#refs)
-- [Commits](#commits)
     - [Get Current SHA1](#get-current-sha1)
+- [Commits](#commits)
     - [Stage Files](#stage-files)
     - [Unstage Files](#unstage-files)
     - [Commit Staged Changes](#commit-staged-changes)
@@ -77,13 +77,13 @@ HEAD^^      # 2 commits before head, same as HEAD~2
 HEAD~5      # 5 commits before head
 ```
 
-## Commits
-
 ### Get Current SHA1
 
 ```sh
 git show-ref HEAD -s
 ```
+
+## Commits
 
 ### Stage Files
 
