@@ -3,11 +3,16 @@
 - [Branches](#branches)
     - [Create New Branches](#create-new-branches)
     - [Get Remote Branches](#get-remote-branches)
+    - [Checkout Previous Branch](#checkout-previous-branch)
     - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
     - [List Merged Branches](#list-merged-branches)
     - [Delete Remote Branch/Tag](#delete-remote-branchtag)
+- [Refs](#refs)
 - [Commits](#commits)
     - [Get Current SHA1](#get-current-sha1)
+    - [Stage Files](#stage-files)
+    - [Unstage Files](#unstage-files)
+    - [Commit Staged Changes](#commit-staged-changes)
     - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
     - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
     - [Amend Commits](#amend-commits)
@@ -33,6 +38,14 @@ git fetch origin
 git checkout --track origin/branch-name
 ```
 
+### Checkout Previous Branch
+
+```sh
+git checkout -
+```
+
+Goes back to the previously checked out branch (like `cd -`).
+
 ### Delete Local Remote-Tracking Branches
 
 ```sh
@@ -56,6 +69,14 @@ git push origin :branch-name
 git push origin :tag-name
 ```
 
+## Refs
+
+```sh
+HEAD^       # 1 commit before head, same as HEAD~1
+HEAD^^      # 2 commits before head, same as HEAD~2
+HEAD~5      # 5 commits before head
+```
+
 ## Commits
 
 ### Get Current SHA1
@@ -64,25 +85,71 @@ git push origin :tag-name
 git show-ref HEAD -s
 ```
 
+### Stage Files
+
+```sh
+git add (file) [file 2] [file 3] ...
+```
+
+Adds files to the staging area, ready to be commited.
+
+### Unstage Files
+
+```sh
+git reset HEAD (file)
+```
+
+Unstages a file but keeps changes made to the file.
+
+### Commit Staged Changes
+
+```sh
+git commit
+```
+
+Opens the default text editor, which allows a multi-line commit message to be entered. Once the file is saved and closed, the commit is created.
+
+```sh
+git commit -m "message"
+```
+
+Creates a commit with the specified message. If multiple `-m` options are given, their values are concatenated as separate paragraphs.
+
+```sh
+git commit -a
+```
+
+Automatically stages all files that have been modified and/or deleted, and commits them (does not affect untracked files). Can be combined with the `m` option.
+
 ### Undo Local Commits With `git reset`
 
 _These should only be used for commits that have **NOT** yet been pushed to a remote. For undoing public commits, see [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)._
 
 ```sh
-# Keeps file changes but undoes the commit and leaves changes unstaged. HEAD~ is the same as HEAD~1.
 git reset HEAD~
+```
 
-# Like git reset HEAD~, but leaves existing file changes staged rather than unstaged.
+Keeps file changes but undoes the last commit and leaves changes unstaged. `HEAD~` is the same as `HEAD~1` and `HEAD^` _(see [Refs](#refs))_.
+
+```sh
 git reset --soft HEAD~
+```
 
-# Like git reset HEAD~, but discards ALL existing file changes in the commit. The commit can only be brought back if it is still in the reflog (see git reflog).
+Similar to `git reset HEAD~`, but leaves existing file changes staged rather than unstaged.
+
+```sh
 git reset --hard HEAD~
+```
 
-# ...change files here...
+Similar to `git reset HEAD~`, but discards **ALL** existing file changes in the commit. The commit can only be brought back if it is still in the reflog _(see [git-reflog](https://git-scm.com/docs/git-reflog))_.
+
+```sh
+# After changing file(s)
 git add (files)
-# git reset copies old HEAD to .git/ORIG_HEAD. This can be used as a commit object
 git commit -c ORIG_HEAD
 ```
+
+`git reset` copies the old `HEAD` to `.git/ORIG_HEAD`. This can be used as a commit object for the new commit. `-c` will open a text editor to let you check the commit and change the commit message. `-C` can be used to skip this and commit with the old message.
 
 _See also:_
 
@@ -94,7 +161,7 @@ _See also:_
 
 ```sh
 git log             # get the commit's SHA1
-git revert <SHA>
+git revert (SHA1)
 git push
 ```
 
@@ -113,7 +180,7 @@ _See also:_
 git commit --amend
 ```
 
-Replaces the tip of the current branch by creating a new commit. The new commit has the same parents and author as the current one.
+Replaces the tip of the current branch by creating a new commit. The new commit has the same parents and author as the current one. The default text editor will be invoked, allowing the commit message to be edited.
 
 This is a rough equivalent for:
 
