@@ -1,13 +1,129 @@
 # Git Cheatsheet
 
+- [Branches](#branches)
+    - [Create New Branches](#create-new-branches)
+    - [Get Remote Branches](#get-remote-branches)
+    - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
+    - [List Merged Branches](#list-merged-branches)
+    - [Delete Remote Branch/Tag](#delete-remote-branchtag)
+- [Commits](#commits)
+    - [Get Current SHA1](#get-current-sha1)
+    - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
+    - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
+    - [Amend Commits](#amend-commits)
+- [Tags](#tags)
+- [Log](#log)
+    - [Ranges](#ranges)
+    - [Formatting](#formatting)
+
 ## Branches
 
-### Creating
+### Create New Branches
 
 ```sh
 git checkout -b branch-name
+# Push to remote repo
 git push origin branch-name --set-upstream
 ```
+
+### Get Remote Branches
+
+```sh
+git fetch origin
+git checkout --track origin/branch-name
+```
+
+### Delete Local Remote-Tracking Branches
+
+```sh
+git remote prune origin
+```
+
+Deletes origin/* branches in local copy. Doesn't affect the remote.
+
+### List Merged Branches
+
+```sh
+git branch -a --merged
+```
+
+List outdated branches that have been merged into the **current one**.
+
+### Delete Remote Branch/Tag
+
+```sh
+git push origin :branch-name
+git push origin :tag-name
+```
+
+## Commits
+
+### Get Current SHA1
+
+```sh
+git show-ref HEAD -s
+```
+
+### Undo Local Commits With `git reset`
+
+_These should only be used for commits that have **NOT** yet been pushed to a remote. For undoing public commits, see [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)._
+
+```sh
+# Keeps file changes but undoes the commit and leaves changes unstaged. HEAD~ is the same as HEAD~1.
+git reset HEAD~
+
+# Like git reset HEAD~, but leaves existing file changes staged rather than unstaged.
+git reset --soft HEAD~
+
+# Like git reset HEAD~, but discards ALL existing file changes in the commit. The commit can only be brought back if it is still in the reflog (see git reflog).
+git reset --hard HEAD~
+
+# ...change files here...
+git add (files)
+# git reset copies old HEAD to .git/ORIG_HEAD. This can be used as a commit object
+git commit -c ORIG_HEAD
+```
+
+_See also:_
+
+* [Git Basics: Undoing Things](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
+* [How to undo (almost) anything with Git](https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/)
+* [git-reset](https://git-scm.com/docs/git-reset)
+
+### Undo Public Commits With `git revert`
+
+```sh
+git log             # get the commit's SHA1
+git revert <SHA>
+git push
+```
+
+`git revert` creates a new commit that's the inverse of the commit with given SHA. Anything removed in the old commit will be added to the new commit and anything added in the old commit will be removed from the new commit.
+
+This is safe in the sense that it does not change any existing commits, but instead creates a new one.
+
+_See also:_
+
+* [git-revert](https://git-scm.com/docs/git-revert)
+* [git-rebase](https://git-scm.com/docs/git-rebase)
+
+### Amend Commits
+
+```sh
+git commit --amend
+```
+
+Replaces the tip of the current branch by creating a new commit. The new commit has the same parents and author as the current one.
+
+This is a rough equivalent for:
+
+```sh
+git reset --soft HEAD^
+# ...change files here...
+git commit -c ORIG_HEAD
+```
+
+_Be aware of the implications of rewriting history when changing commits that have already been pushed to a remote. See also: [git-rebase](https://git-scm.com/docs/git-rebase)._
 
 ## Tags
 
@@ -28,16 +144,16 @@ git show 1.0.0
 
 ```sh
 git log master            # branch
-git log origin/master     # branch, remote
-git log v1.0.0            # tag
-git log master develop
+git log origin/master     # remote branch
+git log 1.0.0             # tag
+git log master develop    # multiple branches
 
 git log app/file.md       # only file
 # tags and branches
 git log --simplify-by-decoration app/file.md
 
-git log v2.0..master      # reachable from *master* but not *v2.0*
-git log v2.0...master     # reachable from *master* and *v2.0*, but not both
+git log 2.0..master       # reachable from *master* but not *2.0*
+git log 2.0...master      # reachable from *master* and *2.0*, but not both
 ```
 
 ### Formatting
