@@ -1,5 +1,22 @@
 # Python Cheatsheet
 
+## Argparse
+
+```python
+parser = argparse.ArgumentParser(description="Program description.")
+parser.add_argument("pos_arg", action="store", help="Positional argument.")
+parser.add_argument("-f", "--foo", action="store", help="Optional argument.")
+parser.add_argument("-o", "--optional", action="store", default="bar", help="Optional argument with default value.")
+parser.add_argument("-t", "--transpose", action="store_true", help="Optional true argument.")
+parser.add_argument("-V", "--version", action="version", version="Program Name v1.0.0", help="Displays version information and exits.")
+args = vars(parser.parse_args())
+
+args["pos_arg"]
+args["foo"]
+args["keys"]
+args["indent_spaces"]
+```
+
 ## Logging
 
 ### Basic Logger Setup
