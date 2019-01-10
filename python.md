@@ -2,20 +2,77 @@
 
 ## Argparse
 
+### Basic Setup
+
 ```python
 parser = argparse.ArgumentParser(description="Program description.")
 parser.add_argument("pos_arg", action="store", help="Positional argument.")
 parser.add_argument("-f", "--foo", action="store", help="Optional argument.")
-parser.add_argument("-o", "--optional", action="store", default="bar", help="Optional argument with default value.")
-parser.add_argument("-t", "--transpose", action="store_true", help="Optional true argument.")
-parser.add_argument("-V", "--version", action="version", version="Program Name v1.0.0", help="Displays version information and exits.")
 args = vars(parser.parse_args())
-
 args["pos_arg"]
 args["foo"]
-args["keys"]
+```
+
+Basic setup where `pos_arg` is a required positional argument and `-f` or `--foo` are optional arguments.
+
+### Optional Arguments
+
+```python
+parser.add_argument("-o", "--optional",
+                    action="store",
+                    default="foo",
+                    help="Optional argument with default value.")
+```
+
+Adds an optional argument with a default value of `foo`.
+
+```python
+parser.add_argument("-t", "--transpose",
+                    action="store_true",
+                    help="Optional True argument.")
+```
+
+Adds an optional argument with a default value of `False`. If this argument is used, the value will be set to `True`.
+
+_See also: [Argparse action](https://docs.python.org/3/library/argparse.html#action)._
+
+### Multiple Values With `nargs`
+
+```python
+parser.add_argument("keys",
+                    action="store",
+                    nargs="+",
+                    default=None, help="Positional list argument")
+```
+
+All of the values present in this argument will be stored into a list.
+
+_See also: [Argparse nargs](https://docs.python.org/3/library/argparse.html#nargs)_.
+
+### Type, Metavar and Dest
+
+```python
+parser.add_argument("-i", "--indent-spaces",
+                    action="store",
+                    default=4,
+                    type=int,
+                    metavar="SPACES",
+                    help="Number of spaces to use for indentation (defaults to 4).")
 args["indent_spaces"]
 ```
+
+Adds an optional argument which expects an `int` as a value. The help text will refer to the value as `SPACES` instead of `INDENT_SPACES` due to [metavar](https://docs.python.org/3/library/argparse.html#metavar). However, it is still accessed with `args["indent_spaces"]`, due to the default [dest](https://docs.python.org/3/library/argparse.html#dest) value.
+
+### Display Version
+
+```python
+parser.add_argument("-V", "--version",
+                    action="version",
+                    version="Program Name v1.0.0",
+                    help="Displays version information and exits.")
+```
+
+Adds an argument to display a version string.
 
 ## Logging
 
