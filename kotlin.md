@@ -4,11 +4,22 @@
 <a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="assets/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
-> Kotlin is a statically typed programming language for modern multiplatform applications.
+> Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
 
-* JVM language
-* Object oriented
-* Functional
+- [Variables](#variables)
+    - [Mutability](#mutability)
+    - [Strings](#strings)
+- [Control Flow](#control-flow)
+    - [Using `if` As An Expression](#using-if-as-an-expression)
+    - [`for` Loops](#for-loops)
+    - [`while` Loops](#while-loops)
+    - [`when` Statement](#when-statement)
+- [Functions](#functions)
+    - [Parameters & Return Types](#parameters--return-types)
+    - [Function Expressions](#function-expressions)
+    - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
+- [Classes](#classes)
+    - [Primary Constructor](#primary-constructor)
 
 ## Variables
 
@@ -125,6 +136,14 @@ fun getGreeting(person: Person): String {
 fun getGreeting(person: Person): String = "Hello, ${person.name}"
 fun getGreeting(person: Person) = "Hello, ${person.name}"
 ```
+
+### Function Expressions
+
+```kotlin
+fun max(a: Int, b: Int): Int = if (a > b) a else b
+```
+
+One-liner functions can be declared and defined as above.
 
 ### Higher Order Functions / Lambdas
 
