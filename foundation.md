@@ -16,6 +16,8 @@ _I use these components very frequently, so I like to keep them handy._
     - [Lists Without Bullets](#lists-without-bullets)
     - [Definition List](#definition-list)
 
+Latest docs: https://foundation.zurb.com/sites/docs/index.html
+
 ## Blank Template
 
 ```html
