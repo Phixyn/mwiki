@@ -42,10 +42,10 @@ pipeline {
 
 Environment variables can only be modified temporarily with a `withEnv` block.
 
-### Variables Inside Script Block (?)
+### Storing shell STDOUT values
 
 ```groovy
-var = sh([script: "echo 'Variable value'", returnStdout: true]).trim()
+def var = sh([script: "echo 'Variable value'", returnStdout: true]).trim()
 ```
 
 ## Triggers
