@@ -4,6 +4,8 @@
     - [Create New Branches](#create-new-branches)
     - [Get Remote Branches](#get-remote-branches)
     - [Checkout Previous Branch](#checkout-previous-branch)
+    - [Rename Branch](#rename-branch)
+    - [Rename Remote Branch](#rename-remote-branch)
     - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
     - [List Merged Branches](#list-merged-branches)
     - [Delete Remote Branch/Tag](#delete-remote-branchtag)
@@ -46,13 +48,38 @@ git checkout -
 
 Goes back to the previously checked out branch (like `cd -`).
 
+### Rename Branch
+
+```sh
+git branch -m new-name
+```
+
+Rename the current branch to `new-name`.
+
+```sh
+git branch -m old-name new-name
+```
+
+Rename a branch called `old-name` to `new-name`.
+
+### Rename Remote Branch
+
+```sh
+# Rename local branch
+git branch -m old-name new-name
+# Delete old-name remote branch and push new-name local branch
+git push origin :old-name new-name
+# Reset upstream branch for new-name local branch
+git push origin new-name --set-upstream
+```
+
 ### Delete Local Remote-Tracking Branches
 
 ```sh
 git remote prune origin
 ```
 
-Deletes origin/* branches in local copy. Doesn't affect the remote.
+Deletes `origin/*` branches in local copy. Doesn't affect the remote.
 
 ### List Merged Branches
 
@@ -119,7 +146,7 @@ Creates a commit with the specified message. If multiple `-m` options are given,
 git commit -a
 ```
 
-Automatically stages all files that have been modified and/or deleted, and commits them (does not affect untracked files). Can be combined with the `m` option.
+Automatically stages all files that have been modified and/or deleted, and commits them (does not affect untracked files). Can be combined with the `-m` option.
 
 ### Undo Local Commits With `git reset`
 
