@@ -1,5 +1,31 @@
 # Python Cheatsheet
 
+## Extended Slices
+
+```python
+myList = list(range(10))
+myList[::2]     # [0, 2, 4, 6, 8]
+```
+
+Equivalent to `myList[0:10:2]`.
+
+```python
+myList = list(range(10))
+myList[::-1]    # [9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
+
+Equivalent to `myList[10:0:-1]`.
+
+```python
+def isPalindrome(word):
+    return word[::-1] == word
+
+isPalindrome("noon") # True
+isPalindrome("zoey") # False
+```
+
+Simple function to check if word is a [palindrome](https://en.wikipedia.org/wiki/Palindrome).
+
 ## Argparse
 
 ### Basic Setup
