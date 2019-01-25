@@ -18,6 +18,7 @@
     - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
     - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
     - [Amend Commits](#amend-commits)
+    - [Empty Commit](#empty-commit)
 - [Tags](#tags)
 - [Log](#log)
     - [Ranges](#ranges)
@@ -218,6 +219,16 @@ git commit -c ORIG_HEAD
 ```
 
 _Be aware of the implications of rewriting history when changing commits that have already been pushed to a remote. See also: [git-rebase](https://git-scm.com/docs/git-rebase)._
+
+### Empty Commit
+
+```sh
+git commit -m "Empty commit" --allow-empty
+```
+
+```sh
+git commit --allow-empty --allow-empty-message
+```
 
 ## Tags
 
