@@ -135,10 +135,13 @@ _Requirements: `import sys` and basic setup._
 
 ```python
 LOGS_FOLDER_NAME = "logs"
+# Note: change os.getcwd() if you don't want a folder in the same
+# location as the script
+LOGS_FOLDER_PATH = os.path.join(os.getcwd(), LOGS_FOLDER_NAME)
 # Save log files with the project, date and time in the name
 # (e.g. Program-Name_2017-10-20_09-55.log)
 LOG_FILE_NAME = time.strftime("Program-Name_%Y-%m-%d_%H-%M.log")
-LOG_FILE_PATH = os.path.join(os.getcwd(), LOGS_FOLDER_NAME, LOG_FILE_NAME)
+LOG_FILE_PATH = os.path.join(LOGS_FOLDER_PATH, LOG_FILE_NAME)
 
 # Create logs folder if it is not present
 if not os.path.isdir(LOGS_FOLDER_NAME):
