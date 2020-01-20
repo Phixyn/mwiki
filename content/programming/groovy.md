@@ -1,6 +1,21 @@
+---
+title: Groovy Cheatsheet
+description: Mostly notes about Groovy.
+date: 2020-01-20 22:11
+category: Programming
+tags:
+  - programming
+  - groovy
+  - gradle
+---
+
 # Groovy Cheatsheet
 
-## tokenize() vs. split()
+- [`tokenize()` vs. `split()`](#tokenize-vs-split)
+
+- - -
+
+## `tokenize()` vs. `split()`
 
 1. The `split()` method returns a `string[]` instance and the `tokenize()` method returns a `list` instance
 2. `tokenize()` will ignore empty string (when a delimiter appears twice in succession) whereas `split()` keeps such string.

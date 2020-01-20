@@ -1,28 +1,40 @@
+---
+title: Git Cheatsheet
+description: A useful reference of git commands and how to do various things with git.
+date: 2020-01-20 22:11
+category: Version Control
+tags:
+  - version-control
+  - git
+---
+
 # Git Cheatsheet
 
 - [Branches](#branches)
-    - [Create New Branches](#create-new-branches)
-    - [Get Remote Branches](#get-remote-branches)
-    - [Checkout Previous Branch](#checkout-previous-branch)
-    - [Rename Branch](#rename-branch)
-    - [Rename Remote Branch](#rename-remote-branch)
-    - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
-    - [List Merged Branches](#list-merged-branches)
-    - [Delete Remote Branch/Tag](#delete-remote-branchtag)
+  - [Create New Branches](#create-new-branches)
+  - [Get Remote Branches](#get-remote-branches)
+  - [Checkout Previous Branch](#checkout-previous-branch)
+  - [Rename Branch](#rename-branch)
+  - [Rename Remote Branch](#rename-remote-branch)
+  - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
+  - [List Merged Branches](#list-merged-branches)
+  - [Delete Remote Branch/Tag](#delete-remote-branchtag)
 - [Refs](#refs)
-    - [Get Current SHA1](#get-current-sha1)
+  - [Get Current SHA1](#get-current-sha1)
 - [Commits](#commits)
-    - [Stage Files](#stage-files)
-    - [Unstage Files](#unstage-files)
-    - [Commit Staged Changes](#commit-staged-changes)
-    - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
-    - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
-    - [Amend Commits](#amend-commits)
-    - [Empty Commit](#empty-commit)
+  - [Stage Files](#stage-files)
+  - [Unstage Files](#unstage-files)
+  - [Commit Staged Changes](#commit-staged-changes)
+  - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
+  - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
+  - [Amend Commits](#amend-commits)
+  - [Empty Commit](#empty-commit)
 - [Tags](#tags)
 - [Log](#log)
-    - [Ranges](#ranges)
-    - [Formatting](#formatting)
+  - [Ranges](#ranges)
+  - [Formatting](#formatting)
+
+- - -
 
 ## Branches
 

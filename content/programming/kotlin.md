@@ -1,25 +1,37 @@
+---
+title: Kotlin Cheatsheet
+description: General notes about Kotlin, pretty basic at the moment.
+date: 2020-01-20 22:11
+category: Programming
+tags:
+  - programming
+  - kotlin
+---
+
 # Kotlin Cheatsheet
 
 <p align="center">
-<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="assets/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
 
 - [Variables](#variables)
-    - [Mutability](#mutability)
-    - [Strings](#strings)
+  - [Mutability](#mutability)
+  - [Strings](#strings)
 - [Control Flow](#control-flow)
-    - [Using `if` As An Expression](#using-if-as-an-expression)
-    - [`for` Loops](#for-loops)
-    - [`while` Loops](#while-loops)
-    - [`when` Statement](#when-statement)
+  - [Using `if` As An Expression](#using-if-as-an-expression)
+  - [`for` Loops](#for-loops)
+  - [`while` Loops](#while-loops)
+  - [`when` Statement](#when-statement)
 - [Functions](#functions)
-    - [Parameters & Return Types](#parameters--return-types)
-    - [Function Expressions](#function-expressions)
-    - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
+  - [Parameters & Return Types](#parameters--return-types)
+  - [Function Expressions](#function-expressions)
+  - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
 - [Classes](#classes)
-    - [Primary Constructor](#primary-constructor)
+  - [Primary Constructor](#primary-constructor)
+
+- - -
 
 ## Variables
 

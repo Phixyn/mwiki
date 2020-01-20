@@ -1,4 +1,19 @@
+---
+title: Korean Notes
+description: Korean notes.
+date: 2020-01-20 22:11
+category: Languages
+tags:
+  - languages
+  - korean
+---
+
 # Korean Notes
+
+- [Alphabet: Hangul (also known as Hangeul)](#alphabet-hangul-also-known-as-hangeul)
+- [Common Phrases: Beginner](#common-phrases-beginner)
+
+- - -
 
 ## Alphabet: Hangul (also known as Hangeul)
 

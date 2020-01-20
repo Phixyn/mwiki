@@ -1,4 +1,27 @@
+---
+title: Python Cheatsheet
+description: Handy Python cheatsheet, contains some tricks and useful snippets.
+date: 2020-01-20 22:11
+category: Programming
+tags:
+  - programming
+  - python
+---
+
 # Python Cheatsheet
+
+- [Extended Slices](#extended-slices)
+- [Argparse](#argparse)
+  - [Basic Setup](#basic-setup)
+  - [Optional Arguments](#optional-arguments)
+  - [Multiple Values With `nargs`](#multiple-values-with-nargs)
+  - [Type, Metavar and Dest](#type-metavar-and-dest)
+  - [Display Version](#display-version)
+- [Logging](#logging)
+  - [Basic Logger Setup](#basic-logger-setup)
+  - [Logging Handlers](#logging-handlers)
+
+- - -
 
 ## Extended Slices
 

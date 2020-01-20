@@ -1,4 +1,23 @@
+---
+title: Jenkins Pipeline Cheatsheet
+description: Jenkins pipelines notes and findings.
+date: 2020-01-20 22:11
+category: Continuous Integration
+tags:
+  - continuous-integration
+  - ci-cd
+  - jenkins
+---
+
 # Jenkins Pipeline Cheatsheet
+
+- [Archiving Artifacts](#archiving-artifacts)
+- [Variables](#variables)
+  - [Global Variables](#global-variables)
+  - [Environment Variables](#environment-variables)
+  - [Storing shell STDOUT values](#storing-shell-stdout-values)
+- [Triggers](#triggers)
+  - [Conditional Triggers](#conditional-triggers)
 
 ## Archiving Artifacts
 

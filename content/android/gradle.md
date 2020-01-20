@@ -1,4 +1,21 @@
+---
+title: Gradle Cheatsheet
+description: Gradle notes and reference.
+date: 2020-01-20 22:11
+category: Android
+tags:
+  - android
+  - gradle
+---
+
 # Gradle Cheatsheet
+
+- [Save Shell Command Output To Variable](#save-shell-command-output-to-variable)
+  - [Method 1](#method-1)
+  - [Method 2](#method-2)
+  - [Usage In Gradle Tasks](#usage-in-gradle-tasks)
+
+- - -
 
 ## Save Shell Command Output To Variable
 
