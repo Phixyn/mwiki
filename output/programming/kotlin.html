@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/colorful.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Kotlin Cheatsheet - Wiki &bull; Phixyn</title>
+    <meta name="keywords" content="personal, wiki, stuff"/>
+    <meta name="description" content="Phixyn's Personal Wiki \o/"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  </head>
+
+  <body>
+    <div id="container" class="typo">
+      
+<div id="header">
+  <div id="post-nav">
+    <a href="/">Wiki &bull; Phixyn</a>
+    &nbsp;&#187;&nbsp;
+    <a href="/#programming">programming</a>
+    &nbsp;&#187;&nbsp;Kotlin Cheatsheet
+    <span class="updated">Updated&nbsp;
+    2020-01-20 22:11
+    </span>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div id="content">
+  <h1 id="kotlin-cheatsheet">Kotlin Cheatsheet</h1>
+<p align="center">
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="/attach/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+</p>
+
+<blockquote>
+<p>Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.</p>
+</blockquote>
+<ul>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#mutability">Mutability</a></li>
+<li><a href="#strings">Strings</a></li>
+<li><a href="#control-flow">Control Flow</a></li>
+<li><a href="#using-if-as-an-expression">Using <code>if</code> As An Expression</a></li>
+<li><a href="#for-loops"><code>for</code> Loops</a></li>
+<li><a href="#while-loops"><code>while</code> Loops</a></li>
+<li><a href="#when-statement"><code>when</code> Statement</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#parameters--return-types">Parameters &amp; Return Types</a></li>
+<li><a href="#function-expressions">Function Expressions</a></li>
+<li><a href="#higher-order-functions--lambdas">Higher Order Functions / Lambdas</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#primary-constructor">Primary Constructor</a></li>
+</ul>
+<hr />
+<h2 id="variables">Variables</h2>
+<h3 id="mutability">Mutability</h3>
+<div class="hlcode"><pre><span class="k">var</span> <span class="n">mutableString</span><span class="p">:</span> <span class="n">String</span> <span class="p">=</span> <span class="s">&quot;Phixyn&quot;</span>
+<span class="k">var</span> <span class="n">immutableString</span><span class="p">:</span> <span class="n">String</span> <span class="p">=</span> <span class="s">&quot;Phixyn&quot;</span>
+<span class="k">var</span> <span class="n">inferredString</span> <span class="p">=</span> <span class="s">&quot;Phixyn&quot;</span> <span class="c1">// Type: String</span>
+</pre></div>
+
+
+<h3 id="strings">Strings</h3>
+<div class="hlcode"><pre><span class="k">val</span> <span class="n">zoey</span> <span class="p">=</span> <span class="n">Person</span><span class="p">(</span><span class="s">&quot;Zoey&quot;</span><span class="p">)</span>
+<span class="k">val</span> <span class="n">myName</span> <span class="p">=</span> <span class="s">&quot;Phixyn&quot;</span>
+
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;My name is: $myName.&quot;</span><span class="p">)</span>
+<span class="n">println</span><span class="p">(</span><span class="s">&quot;Person&#39;s name is: ${zoey.name}.&quot;</span><span class="p">)</span> <span class="c1">// For properties</span>
+</pre></div>
+
+
+<h2 id="control-flow">Control Flow</h2>
+<h3 id="using-if-as-an-expression">Using <code>if</code> As An Expression</h3>
+<div class="hlcode"><pre><span class="k">val</span> <span class="n">max</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="n">a</span> <span class="k">else</span> <span class="n">b</span>
+</pre></div>
+
+
+<p><code>if</code> is an expression (i.e. it returns a value).</p>
+<div class="hlcode"><pre><span class="k">val</span> <span class="n">max</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;Choose a&quot;</span><span class="p">)</span>
+    <span class="n">a</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;Choose b&quot;</span><span class="p">)</span>
+    <span class="n">b</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>When using <code>if</code> blocks, the last expression is the return value of the block.</p>
+<h3 id="for-loops"><code>for</code> Loops</h3>
+<div class="hlcode"><pre><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">0.</span><span class="p">.</span><span class="m">10</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span> <span class="c1">// 1 - 10</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">0</span> <span class="n">until</span> <span class="m">10</span><span class="p">)</span> <span class="c1">// 1 - 9</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="p">(</span><span class="m">0.</span><span class="p">.</span><span class="m">10</span><span class="p">).</span><span class="n">forEach</span> <span class="p">{</span> <span class="p">}</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">0</span> <span class="n">until</span> <span class="m">10</span> <span class="n">step</span> <span class="m">2</span><span class="p">)</span> <span class="c1">// 0, 2, 4, 6, 8</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">10</span> <span class="n">downTo</span> <span class="m">1</span> <span class="n">step</span> <span class="m">2</span><span class="p">)</span> <span class="c1">// 10, 8, 6, 4, 2</span>
+</pre></div>
+
+
+<h3 id="while-loops"><code>while</code> Loops</h3>
+<div class="hlcode"><pre><span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">x</span><span class="p">--</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="k">do</span> <span class="p">{</span>
+    <span class="n">x</span><span class="p">--</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+</pre></div>
+
+
+<h3 id="when-statement"><code>when</code> Statement</h3>
+<div class="hlcode"><pre><span class="k">when</span> <span class="p">(</span><span class="n">direction</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NORTH</span> <span class="p">-&gt;</span> <span class="p">{</span>
+        <span class="n">print</span><span class="p">(</span><span class="s">&quot;North&quot;</span><span class="p">)</span>
+        <span class="c1">// Some other things</span>
+    <span class="p">}</span>
+    <span class="n">SOUTH</span> <span class="p">-&gt;</span> <span class="n">print</span><span class="p">(</span><span class="s">&quot;South&quot;</span><span class="p">)</span>
+    <span class="n">EAST</span><span class="p">,</span> <span class="n">WEST</span> <span class="p">-&gt;</span> <span class="n">print</span><span class="p">(</span><span class="s">&quot;East or West&quot;</span><span class="p">)</span>
+    <span class="s">&quot;N/A&quot;</span> <span class="p">-&gt;</span> <span class="n">print</span><span class="p">(</span><span class="s">&quot;Unavailable&quot;</span><span class="p">)</span>
+    <span class="k">else</span> <span class="p">-&gt;</span> <span class="n">print</span><span class="p">(</span><span class="s">&quot;Invalid Direction&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>The counterpart to <code>switch</code> statements.</p>
+<h2 id="functions">Functions</h2>
+<h3 id="parameters-return-types">Parameters &amp; Return Types</h3>
+<div class="hlcode"><pre><span class="k">fun</span> <span class="nf">printName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;Phixyn&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">printName</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Person</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">person</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">getGreeting</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Person</span><span class="p">):</span> <span class="n">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">&quot;Hello, ${person.name}&quot;</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">getGreeting</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Person</span><span class="p">):</span> <span class="n">String</span> <span class="p">=</span> <span class="s">&quot;Hello, ${person.name}&quot;</span>
+<span class="k">fun</span> <span class="nf">getGreeting</span><span class="p">(</span><span class="n">person</span><span class="p">:</span> <span class="n">Person</span><span class="p">)</span> <span class="p">=</span> <span class="s">&quot;Hello, ${person.name}&quot;</span>
+</pre></div>
+
+
+<h3 id="function-expressions">Function Expressions</h3>
+<div class="hlcode"><pre><span class="k">fun</span> <span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">Int</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="n">a</span> <span class="k">else</span> <span class="n">b</span>
+</pre></div>
+
+
+<p>One-liner functions can be declared and defined as above.</p>
+<h3 id="higher-order-functions-lambdas">Higher Order Functions / Lambdas</h3>
+<div class="hlcode"><pre><span class="k">fun</span> <span class="nf">displayWithLambda</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">Unit</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">func</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// ...</span>
+
+<span class="k">fun</span> <span class="nf">printName</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="n">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">println</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">person</span><span class="p">.</span><span class="n">displayWithLambda</span><span class="p">(::</span><span class="n">printName</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="k">fun</span> <span class="nf">callbackIfTrue</span><span class="p">(</span><span class="n">condition</span><span class="p">:</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">callback</span><span class="p">:</span> <span class="p">()</span> <span class="p">-&gt;</span> <span class="n">Unit</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">callback</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">callbackIfTrue</span><span class="p">(</span><span class="n">someBoolean</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition was true&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="classes">Classes</h2>
+<h3 id="primary-constructor">Primary Constructor</h3>
+<div class="hlcode"><pre><span class="k">class</span> <span class="nf">Person</span><span class="p">(</span><span class="k">val</span> <span class="n">name</span><span class="p">:</span> <span class="n">String</span><span class="p">,</span> <span class="k">val</span> <span class="n">age</span><span class="p">:</span> <span class="n">Int</span><span class="p">)</span>
+<span class="k">val</span> <span class="n">zoey</span> <span class="p">=</span> <span class="n">Person</span><span class="p">(</span><span class="s">&quot;Zoey&quot;</span><span class="p">,</span> <span class="m">21</span><span class="p">)</span>
+</pre></div>
+  
+</div>
+    </div>
+    <div id="footer">
+      <div class="footer-left">
+        <p>
+        Copyright © 2020 Phixyn.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+        Theme by <a href="https://github.com/tankywoo/yasimple_x2" target="_blank">YASimple_X2</a>.
+        </p>
+      </div> <!-- end footer-left -->
+      <div class="footer-right">
+        <p>Site Generated 2020-01-20 23:31:44</p>
+      </div> <!-- end footer-right -->
+    </div>
+
+    
+    
+  </body>
+</html>

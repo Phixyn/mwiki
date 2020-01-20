@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/colorful.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>ADB Cheatsheet - Wiki &bull; Phixyn</title>
+    <meta name="keywords" content="personal, wiki, stuff"/>
+    <meta name="description" content="Phixyn's Personal Wiki \o/"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  </head>
+
+  <body>
+    <div id="container" class="typo">
+      
+<div id="header">
+  <div id="post-nav">
+    <a href="/">Wiki &bull; Phixyn</a>
+    &nbsp;&#187;&nbsp;
+    <a href="/#android">android</a>
+    &nbsp;&#187;&nbsp;ADB Cheatsheet
+    <span class="updated">Updated&nbsp;
+    2020-01-20 22:11
+    </span>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div id="content">
+  <h1 id="android-debug-bridge-adb-cheatsheet">Android Debug Bridge (ADB) Cheatsheet</h1>
+<ul>
+<li><a href="#listing-connected-devices">Listing Connected Devices</a></li>
+<li><a href="#sending-commands-to-specific-device">Sending Commands To Specific Device</a></li>
+<li><a href="#installing-an-app">Installing An App</a></li>
+<li><a href="#uninstalling-an-app">Uninstalling An App</a></li>
+<li><a href="#copying-files-tofrom-device">Copying Files To/From Device</a></li>
+</ul>
+<hr />
+<h2 id="listing-connected-devices">Listing Connected Devices</h2>
+<div class="hlcode"><pre>adb devices
+</pre></div>
+
+
+<p>Lists connected devices.</p>
+<div class="hlcode"><pre>adb devices -l
+</pre></div>
+
+
+<p>Lists connected devices and device descriptions.</p>
+<h2 id="sending-commands-to-specific-device">Sending Commands To Specific Device</h2>
+<div class="hlcode"><pre>adb -s 1234567 install NotePhix.apk
+</pre></div>
+
+
+<div class="hlcode"><pre><span class="nv">ANDROID_SERIAL</span><span class="o">=</span>1234567
+adb install NotePhix.apk
+</pre></div>
+
+
+<p>If more than one device is connected, specify target using <code>-s</code> or setting <code>$ANDROID_SERIAL</code> env variable.</p>
+<h2 id="installing-an-app">Installing An App</h2>
+<div class="hlcode"><pre>adb install local_path/to_apk.apk
+</pre></div>
+
+
+<p>Install an app at <code>local_path/to_apk.apk</code>, or just <code>YourApp.apk</code>.</p>
+<div class="hlcode"><pre>adb install -r local_path/to_apk.apk
+</pre></div>
+
+
+<p>Re-install the app, but keep its existing data and cache directories on the device.</p>
+<h2 id="uninstalling-an-app">Uninstalling An App</h2>
+<div class="hlcode"><pre>adb uninstall package
+</pre></div>
+
+
+<p>Uninstall the given package and remove all app data and cache directories.</p>
+<div class="hlcode"><pre>adb uninstall –k package
+</pre></div>
+
+
+<p>Uninstall the app, but keep its existing data and cache directories on the device.</p>
+<h2 id="copying-files-tofrom-device">Copying Files To/From Device</h2>
+<div class="hlcode"><pre>adb pull remote/path <span class="nb">local</span>/path
+</pre></div>
+
+
+<p>Copies the file or directory and sub-directories specified by <code>remote/path</code> to <code>local/path</code>.</p>
+<div class="hlcode"><pre>adb push <span class="nb">local</span>/path remote/path
+</pre></div>
+
+
+<p>Copies the file or directory and sub-directories specified by <code>local/path</code> to <code>remote/path</code> on the Android device.</p>
+<div class="hlcode"><pre>adb pull /sdcard/. backup
+</pre></div>
+
+
+<p>Copies the whole <code>/sdcard/</code> directory recursively to a local folder called <code>backup</code>.</p>
+  
+</div>
+    </div>
+    <div id="footer">
+      <div class="footer-left">
+        <p>
+        Copyright © 2020 Phixyn.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+        Theme by <a href="https://github.com/tankywoo/yasimple_x2" target="_blank">YASimple_X2</a>.
+        </p>
+      </div> <!-- end footer-left -->
+      <div class="footer-right">
+        <p>Site Generated 2020-01-20 23:31:44</p>
+      </div> <!-- end footer-right -->
+    </div>
+
+    
+    
+  </body>
+</html>
