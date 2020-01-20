@@ -1,8 +1,23 @@
 # Document:
 # http://simiki.org/docs/configuration.html
 
-url: 
-title: 
-keywords: 
-description: 
-author: 
+url: wiki.phixyn.com
+title: Wiki &bull; Phixyn
+keywords: personal, wiki, stuff
+description: Phixyn's Personal Wiki \o/
+author: Phixyn
+theme: yasimple_x2
+
+# Category aliases
+category:
+  - name: 1-start
+    label: /start/
+  - name: continuous-integration
+    label: CI/CD
+
+# Parser
+markdown:
+  - fenced_code
+  - extra
+  - codehilite(css_class=hlcode, linenums=True)
+  - toc(title=Table of Contents)
