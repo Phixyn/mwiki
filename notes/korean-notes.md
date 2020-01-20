@@ -31,3 +31,13 @@
 | 왜     | wae          |
 | 웨     | we           |
 | 위     | wi           |
+
+## Common Phrases: Beginner
+
+> 안녕하세요 (annyeonghaseyo)
+
+Hi/Hello/Good morning
+
+> 너 어디 출신이야 (neo eodi chulsin-iya)
+
+Where are you from?
