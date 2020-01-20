@@ -11,7 +11,7 @@ tags:
 # Kotlin Cheatsheet
 
 <p align="center">
-<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="assets/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
