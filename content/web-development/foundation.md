@@ -1,3 +1,16 @@
+---
+title: ZURB Foundation Cheatsheet
+description: A reference of Foundation components that I use frequently.
+date: 2020-01-20 22:11
+category: Web Development
+tags:
+  - web-development
+  - front-end
+  - ui
+  - zurb-foundation
+  - foundation
+---
+
 # ZURB Foundation Cheatsheet
 
 _I use these components very frequently, so I like to keep them handy._
@@ -10,17 +23,19 @@ _I use these components very frequently, so I like to keep them handy._
 - [Forms](#forms)
 - [Labels](#labels)
 - [Typography](#typography)
-    - [Small Header Segments](#small-header-segments)
-    - [Subheader](#subheader)
-    - [Typescale](#typescale)
-    - [Lead Paragraph](#lead-paragraph)
-    - [Lists Without Bullets](#lists-without-bullets)
-    - [Definition List](#definition-list)
+  - [Small Header Segments](#small-header-segments)
+  - [Subheader](#subheader)
+  - [Typescale](#typescale)
+  - [Lead Paragraph](#lead-paragraph)
+  - [Lists Without Bullets](#lists-without-bullets)
+  - [Definition List](#definition-list)
 - [Navigation](#navigation)
-    - [Breadcrumbs](#breadcrumbs)
+  - [Breadcrumbs](#breadcrumbs)
 - [Orbit](#orbit)
 
-Latest docs: https://foundation.zurb.com/sites/docs/index.html
+> Latest docs: https://foundation.zurb.com/sites/docs/index.html
+
+- - -
 
 ## Blank Template
 

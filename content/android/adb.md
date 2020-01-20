@@ -1,4 +1,22 @@
-# Android Debug Bridge (adb) Cheatsheet
+---
+title: ADB Cheatsheet
+description: Android Debug Bridge commands
+date: 2020-01-20 22:11
+category: Android
+tags:
+  - android
+  - adb
+---
+
+# Android Debug Bridge (ADB) Cheatsheet
+
+- [Listing Connected Devices](#listing-connected-devices)
+- [Sending Commands To Specific Device](#sending-commands-to-specific-device)
+- [Installing An App](#installing-an-app)
+- [Uninstalling An App](#uninstalling-an-app)
+- [Copying Files To/From Device](#copying-files-tofrom-device)
+
+- - -
 
 ## Listing Connected Devices
 
