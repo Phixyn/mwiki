@@ -2,6 +2,7 @@
 title: ADB Cheatsheet
 description: Android Debug Bridge commands
 date: 2020-01-20 22:11
+updated: 2020-01-21 01:29
 category: Android
 tag:
   - android
@@ -15,6 +16,7 @@ tag:
 - [Installing An App](#installing-an-app)
 - [Uninstalling An App](#uninstalling-an-app)
 - [Copying Files To/From Device](#copying-files-tofrom-device)
+- [Logcat](#logcat)
 
 - - -
 
@@ -92,3 +94,31 @@ adb pull /sdcard/. backup
 ```
 
 Copies the whole `/sdcard/` directory recursively to a local folder called `backup`.
+
+## Logcat
+
+> Dump log of system messages.
+
+```sh
+adb logcat -c
+```
+
+Clear (flush) the selected buffers and exit. The default buffer set is `main`, `system` and `crash`. To clear all of the buffers, use `-b all -c`.
+
+```sh
+adb logcat ClassName:D AndroidRuntime:E \*:S
+```
+
+Debug log output from specific package/class.
+
+```sh
+(adb logcat) 2>&1 | tee logcat.log
+```
+
+Log to stdout but also pipe output to a file using `tee`.
+
+```sh
+(adb logcat | grep -i "com.phixyn") 2>&1 | tee app.log
+```
+
+Same as above but use `grep` to only show logging for app with specific identifier.
