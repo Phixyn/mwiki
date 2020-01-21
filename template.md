@@ -6,7 +6,7 @@ category: Category
 categories:
   - Optionally-nested
   - Category-names
-tags:
+tag:
   - tag-one
   - tag-two
 layout: page
