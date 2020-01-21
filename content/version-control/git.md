@@ -2,6 +2,7 @@
 title: Git Cheatsheet
 description: A useful reference of git commands and how to do various things with git.
 date: 2020-01-20 22:11
+updated: 2020-01-21 01:46
 category: Version Control
 tag:
   - version-control
@@ -34,6 +35,9 @@ tag:
 - [Log](#log)
   - [Ranges](#ranges)
   - [Formatting](#formatting)
+- [Git Clean (new!)](#git-clean-new)
+- [Vimdiff (new!)](#vimdiff-new)
+- [Submodules (new!)](#submodules-new)
 
 - - -
 
@@ -281,3 +285,60 @@ git log --abbrev-commit
         --oneline
         --graph
 ```
+
+## Git Clean (new!)
+
+> ❗ Unfinished! Needs updating.
+
+```sh
+git clean
+```
+
+Remove untracked files from the working tree.
+
+```sh
+git clean -n
+```
+
+Dry run.
+
+```sh
+git clean -i
+```
+
+Interactive.
+
+## Vimdiff (new!)
+
+> ❗ Unfinished! Needs updating.
+
+```sh
+git difftool --tool=vimdiff --no-prompt
+```
+
+[Vimdiff cheatsheet](https://devhints.io/vim-diff)
+
+`:qa` to close all buffers and go to next file
+
+
+`:prev` and `:next` to navigate between files.
+
+## Submodules (new!)
+
+> ❗ Unfinished! Needs updating.
+
+```sh
+git pull --recurse-submodules
+git submodule update --recursive
+```
+
+```sh
+git submodule update --recursive --remote
+```
+
+```sh
+git submodule foreach git reset --hard
+git submodule foreach git clean -fd
+```
+
+Source: [Update Git submodule to latest commit on origin - Stack Overflow](https://stackoverflow.com/a/5828396)
