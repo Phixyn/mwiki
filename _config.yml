@@ -2,7 +2,7 @@
 # http://simiki.org/docs/configuration.html
 
 url: http://wiki.phixyn.com
-title: Wiki &bull; Phixyn
+title: Wiki · Phixyn
 keywords: personal, wiki, stuff
 description: Phixyn's Personal Wiki \o/
 author: Phixyn
@@ -14,6 +14,10 @@ category:
     label: /start/
   - name: continuous-integration
     label: CI/CD
+  - name: ios
+    label: iOS
+  - name: macos
+    label: MacOS
   - name: version-control
     label: Version Control
   - name: web-development
