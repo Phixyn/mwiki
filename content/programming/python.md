@@ -3,8 +3,7 @@ title: Python Cheatsheet
 description: Handy Python cheatsheet, contains some tricks and useful snippets.
 date: 2020-01-20 22:11
 category: Programming
-tags:
-  - programming
+tag:
   - python
 ---
 

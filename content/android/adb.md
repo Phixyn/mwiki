@@ -3,7 +3,7 @@ title: ADB Cheatsheet
 description: Android Debug Bridge commands
 date: 2020-01-20 22:11
 category: Android
-tags:
+tag:
   - android
   - adb
 ---

@@ -3,9 +3,9 @@ title: Kotlin Cheatsheet
 description: General notes about Kotlin, pretty basic at the moment.
 date: 2020-01-20 22:11
 category: Programming
-tags:
-  - programming
+tag:
   - kotlin
+  - android
 ---
 
 # Kotlin Cheatsheet

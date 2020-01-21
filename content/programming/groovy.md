@@ -3,8 +3,7 @@ title: Groovy Cheatsheet
 description: Mostly notes about Groovy.
 date: 2020-01-20 22:11
 category: Programming
-tags:
-  - programming
+tag:
   - groovy
   - gradle
 ---

@@ -3,8 +3,7 @@ title: Korean Notes
 description: Korean notes.
 date: 2020-01-20 22:11
 category: Languages
-tags:
-  - languages
+tag:
   - korean
 ---
 
