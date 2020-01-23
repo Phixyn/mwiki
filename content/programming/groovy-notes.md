@@ -1,6 +1,5 @@
 ---
-title: Groovy Cheatsheet
-description: Mostly notes about Groovy.
+title: Groovy Notes
 date: 2020-01-20 22:11
 category: Programming
 tag:
@@ -8,7 +7,7 @@ tag:
   - gradle
 ---
 
-# Groovy Cheatsheet
+# Groovy Notes
 
 - [`tokenize()` vs. `split()`](#tokenize-vs-split)
 
