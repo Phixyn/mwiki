@@ -10,8 +10,6 @@ theme: yasimple_x2
 
 # Category aliases
 category:
-  - name: 1-start
-    label: /start/
   - name: continuous-integration
     label: CI/CD
   - name: ios
