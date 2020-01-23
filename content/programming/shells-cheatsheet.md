@@ -3,6 +3,7 @@ title: Shells Cheatsheet
 description: Cheatsheet with some useful shell commands. Most work in shell and bash.
 date: 2020-01-21 01:38
 category: Programming
+collection: Shells
 tag:
   - shell
   - bash
