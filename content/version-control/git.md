@@ -31,6 +31,7 @@ tag:
   - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
   - [Amend Commits](#amend-commits)
   - [Empty Commit](#empty-commit)
+- [Stashing](#stashing)
 - [Tags](#tags)
 - [Log](#log)
   - [Ranges](#ranges)
@@ -246,6 +247,50 @@ git commit -m "Empty commit" --allow-empty
 ```sh
 git commit --allow-empty --allow-empty-message
 ```
+
+## Stashing
+
+```sh
+git stash
+```
+
+Stash current changes. Saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+```sh
+git stash list
+```
+
+Show a list of existing stashes.
+
+```sh
+git stash pop [--index]
+```
+
+Attempt to apply the stash at the index (e.g. `stash@{2}`) on top of the current working tree state. If index is not specified, then the top-most (i.e. `stash@{0}`) stash is popped.
+
+```sh
+git stash apply [--index]
+```
+
+Like pop, but do not remove the state from the stash list.
+
+```sh
+git stash drop [-q |--quiet] [<stash>]
+```
+
+Remove a single stash entry from the list of stash entries. When no `<stash>` is given, it removes the latest one (i.e. `stash@{0}`).
+
+```sh
+git stash show [-p] [<stash>]
+```
+
+Show the files that changed in the specified stash, or `stash@{0}` if none is specified. If the `-p` is used, a file diff of the stash will be shown. Example:
+
+```sh
+git stash show -p stash@{2}
+```
+
+Show the diff contents of your third stash.
 
 ## Tags
 
