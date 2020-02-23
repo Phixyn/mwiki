@@ -21,6 +21,7 @@ layout: page
 - [Archiving](#archiving)
 - [SCP Usage Example](#scp-usage-example)
 - [MacOS Commands](#macos-commands)
+  - [Recursively Deleting `.DS_Store` Files](#recursively-deleting-dsstore-files)
   - [Listing USB Devices and Info](#listing-usb-devices-and-info)
 
 - - -
@@ -96,6 +97,16 @@ Usage with a host alias in your SSH config.
 > MacOS and iOS specific shell commands and utilities.
 
 * [ ] TODO: Move to MacOS/iOS category
+
+### Recursively Deleting `.DS_Store` Files
+
+```sh
+find . -name '.DS_Store' -type f -delete
+```
+
+Delete all `.DS_Store` files in the current directory and all directories inside it (i.e. recursively).
+
+_Be careful using a wildcard (*) with this command. Be 100% sure of the result (tip: use `ls` to preview a list of affected files by the wildcard)._
 
 ### Listing USB Devices and Info
 
