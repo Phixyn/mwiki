@@ -19,6 +19,7 @@ tag:
 
 - [Variables](#variables)
   - [Mutability](#mutability)
+  - [Inferred Types and Deferred Assignment](#inferred-types-and-deferred-assignment)
   - [Strings](#strings)
 - [Control Flow](#control-flow)
   - [Using `if` As An Expression](#using-if-as-an-expression)
@@ -40,8 +41,16 @@ tag:
 
 ```kotlin
 var mutableString: String = "Phixyn"
-var immutableString: String = "Phixyn"
-var inferredString = "Phixyn" // Type: String
+val immutableString: String = "Phixyn"
+```
+
+### Inferred Types and Deferred Assignment
+
+```kotlin
+val a: Int = 7
+val b = 4   // Type Int is inferred
+val c: Int  // Type required when no initializer is provided
+c = 2       // Deferred assignment
 ```
 
 ### Strings
