@@ -15,12 +15,31 @@ layout: page
 
 # Shells Cheatsheet
 
+- [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Calendar](#calendar)
 - [Searching](#searching)
 - [Archiving](#archiving)
 - [SCP Usage Example](#scp-usage-example)
 
 - - -
+
+## Keyboard Shortcuts
+
+| Shortcut            | Meaning                                         |
+| ------------------- | ----------------------------------------------- |
+| `CTRL + B`          | Move back one character                         |
+| `CTRL + F`          | Move forward one character                      |
+| `ALT + B`           | Move back a word                                |
+| `ALT + F`           | Move forward a word                             |
+| `CTRL + Left/Right` | Jump to the beginning of the previous/next word |
+| `CTRL + A`          | Move to the start of line                       |
+| `CTRL + E`          | Move to the end of line                         |
+| `CTRL + D`          | Delete current character                        |
+| `CTRL + U`          | Clear from cursor to beginning of line          |
+| `CTRL + K`          | Clear from cursor to end of line                |
+| `CTRL + D`          | Clear one character to the right of the cursor  |
+| `ESC + Backspace`   | Clear one word to the left of the cursor        |
+| `ESC + D`           | Clear one word to the right of the cursor       |
 
 ## Calendar
 
