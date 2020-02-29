@@ -24,3 +24,4 @@ layout: page
 * [How to check whether a particular port is open on a machine from a shell script and perform action based on that?](https://unix.stackexchange.com/questions/149419/how-to-check-whether-a-particular-port-is-open-on-a-machine-from-a-shell-script)
 * [Forming CSV from the first column of a file](https://thesillysymphonies.wordpress.com/2012/06/25/forming-csv-from-the-first-column-of-a-file/)
 * [Mac OSX Server Command-Line Administration](https://www.apple.com/cn/server/docs/Command_Line.pdf)
+* [On the Shebang](https://scriptingosx.com/2017/10/on-the-shebang/)

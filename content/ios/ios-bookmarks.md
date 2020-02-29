@@ -43,6 +43,7 @@ layout: page
 * [Everything About Xcode UI Testing | @samwize](https://samwize.com/2016/02/28/everything-about-xcode-ui-testing-snapshot/)
 * [iOS Accessibility Tutorial: Getting Started | raywenderlich.com](https://www.raywenderlich.com/845-ios-accessibility-tutorial-getting-started)
 * [Accessibility and UI Testing in iOS - Jonathan Chen - Medium](https://medium.com/@jchen_77520/accessibility-and-ui-testing-in-ios-3eb0822a17fb)
+* [iOS UI tests for custom URL scheme | Alexander Ross](https://aross.se/posts/2018-06-17-ios-ui-tests-for-custom-url-scheme/)
 
 ### Launch Arguments
 
@@ -50,3 +51,4 @@ layout: page
 * [Running Xcode tests from the terminal | mokacoding](https://www.mokacoding.com/blog/running-tests-from-the-terminal/)
 * [Passing arguments to iOS tests with xcodebuild - Stack Overflow](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
 * [Launch Arguments & Environment Variables - NSHipster](https://nshipster.com/launch-arguments-and-environment-variables/)
+* [UI Testing with `NSUserDefaults`](https://www.matrixprojects.net/p/ui-testing-with-user-defaults/)
