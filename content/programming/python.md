@@ -167,8 +167,8 @@ LOG_FILE_NAME = time.strftime("Program-Name_%Y-%m-%d_%H-%M.log")
 LOG_FILE_PATH = os.path.join(LOGS_FOLDER_PATH, LOG_FILE_NAME)
 
 # Create logs folder if it is not present
-if not os.path.isdir(LOGS_FOLDER_NAME):
-    os.mkdir(LOGS_FOLDER_NAME)
+if not os.path.isdir(LOGS_FOLDER_PATH):
+    os.mkdir(LOGS_FOLDER_PATH)
 
 # Create and add logging handler for file logging
 loggerFileHandler = logging.FileHandler(LOG_FILE_PATH)
