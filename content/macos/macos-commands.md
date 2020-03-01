@@ -2,6 +2,7 @@
 title: MacOS Commands
 description: MacOS and iOS shell commands and CLI utilities.
 date: 2020-02-24 21:58
+updated: 2020-03-01 19:00
 category: MacOS
 tag:
   - shell

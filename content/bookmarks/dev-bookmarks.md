@@ -2,6 +2,7 @@
 title: Dev Bookmarks
 description: Bookmarks for general development resources.
 date: 2020-01-17 12:51
+updated: 2020-03-01 19:00
 category: Bookmarks
 tag:
   - dev
@@ -13,6 +14,7 @@ layout: page
 
 - [General](#general)
 - [Blogs](#blogs)
+- [Tools](#tools)
 - [Design Patterns](#design-patterns)
 
 - - -
@@ -27,6 +29,10 @@ layout: page
 ## Blogs
 
 * [The Unterminated String](https://www.theunterminatedstring.com/)
+
+## Tools
+
+* [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
 
 ## Design Patterns
 

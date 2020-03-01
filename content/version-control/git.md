@@ -2,7 +2,7 @@
 title: Git Cheatsheet
 description: A useful reference of git commands and how to do various things with git.
 date: 2020-01-20 22:11
-updated: 2020-01-21 01:46
+updated: 2020-03-01 19:00
 category: Version Control
 tag:
   - version-control

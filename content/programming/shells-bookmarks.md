@@ -1,6 +1,7 @@
 ---
 title: Shells Bookmarks
 date: 2020-01-17 12:11
+updated: 2020-03-01 19:00
 category: Programming
 collection: Shells
 tag:

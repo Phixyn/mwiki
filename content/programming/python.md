@@ -2,6 +2,7 @@
 title: Python Cheatsheet
 description: Handy Python cheatsheet, contains some tricks and useful snippets.
 date: 2020-01-20 22:11
+updated: 2020-03-01 19:00
 category: Programming
 collection: Python
 tag:

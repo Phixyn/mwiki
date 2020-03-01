@@ -1,6 +1,7 @@
 ---
 title: Python Bookmarks
 date: 2020-01-17 12:48
+updated: 2020-03-01 19:00
 category: Programming
 collection: Python
 tag:
@@ -23,6 +24,7 @@ layout: page
 
 ## General
 
+* [Python 3 Cheatsheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 * [Python Tips Book - Decorators](http://book.pythontips.com/en/latest/decorators.html) - whole site seems good
 * [One-Liners — Python Tips 0.1 documentation](http://book.pythontips.com/en/latest/one_liners.html)
 * [Python Pandemonium – Medium](https://medium.com/python-pandemonium)
