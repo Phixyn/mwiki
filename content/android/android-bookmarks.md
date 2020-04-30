@@ -47,7 +47,7 @@ layout: page
 * [057: Data Binding with GDE Lisa Wray – Fragmented](http://fragmentedpodcast.com/episodes/057/)
 * [Android Binary Protection Methods](https://www.dionach.com/blog/android-binary-protection-methods)
 * [Having Trouble Focusing? A Primer on Focus in Android](https://blog.novoda.com/do-you-even-focus-bro/)
-  * [Android Developers Blog: Touch Mode](https://android-developers.googleblog.com/2008/12/touch-mode.html)
+    * [Android Developers Blog: Touch Mode](https://android-developers.googleblog.com/2008/12/touch-mode.html)
 
 ## Lifecycle
 

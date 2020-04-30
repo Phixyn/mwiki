@@ -17,7 +17,7 @@ layout: page
 - [Swift](#swift)
 - [Fastlane](#fastlane)
 - [Automated Testing](#automated-testing)
-  - [Launch Arguments](#launch-arguments)
+    - [Launch Arguments](#launch-arguments)
 
 - - -
 
