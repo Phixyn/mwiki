@@ -12,6 +12,7 @@ layout: page
 # Git Bookmarks
 
 - [General](#general)
+- [Workflow](#workflow)
 
 - - -
 
@@ -19,3 +20,7 @@ layout: page
 
 * [GitHub - k88hudson/git-flight-rules: Flight rules for git](https://github.com/k88hudson/git-flight-rules)
 * [Git Submodules basic explanation · GitHub](https://gist.github.com/gitaarik/8735255)
+
+## Workflow
+
+* [5 Useful Tips For A Better Commit Message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)
