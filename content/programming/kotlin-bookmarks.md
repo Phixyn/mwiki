@@ -7,6 +7,7 @@ collection: Kotlin
 tag:
   - kotlin
   - android
+layout: page
 ---
 
 # Kotlin Bookmarks

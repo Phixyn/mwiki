@@ -5,6 +5,7 @@ category: Programming
 tag:
   - groovy
   - gradle
+layout: page
 ---
 
 # Groovy Notes

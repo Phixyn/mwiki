@@ -7,14 +7,15 @@ tag:
   - android
   - gradle
   - groovy
+layout: page
 ---
 
 # Gradle Cheatsheet
 
 - [Save Shell Command Output To Variable](#save-shell-command-output-to-variable)
-  - [Method 1](#method-1)
-  - [Method 2](#method-2)
-  - [Usage In Gradle Tasks](#usage-in-gradle-tasks)
+    - [Method 1](#method-1)
+    - [Method 2](#method-2)
+    - [Usage In Gradle Tasks](#usage-in-gradle-tasks)
 
 - - -
 

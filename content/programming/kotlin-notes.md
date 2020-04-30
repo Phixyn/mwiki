@@ -7,6 +7,8 @@ collection: Kotlin
 tag:
   - kotlin
   - android
+layout: page
+draft: true
 ---
 
 # Kotlin Notes

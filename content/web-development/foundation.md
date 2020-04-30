@@ -9,6 +9,7 @@ tag:
   - ui
   - zurb-foundation
   - foundation
+layout: page
 ---
 
 # ZURB Foundation Cheatsheet
@@ -23,14 +24,14 @@ _I use these components very frequently, so I like to keep them handy._
 - [Forms](#forms)
 - [Labels](#labels)
 - [Typography](#typography)
-  - [Small Header Segments](#small-header-segments)
-  - [Subheader](#subheader)
-  - [Typescale](#typescale)
-  - [Lead Paragraph](#lead-paragraph)
-  - [Lists Without Bullets](#lists-without-bullets)
-  - [Definition List](#definition-list)
+    - [Small Header Segments](#small-header-segments)
+    - [Subheader](#subheader)
+    - [Typescale](#typescale)
+    - [Lead Paragraph](#lead-paragraph)
+    - [Lists Without Bullets](#lists-without-bullets)
+    - [Definition List](#definition-list)
 - [Navigation](#navigation)
-  - [Breadcrumbs](#breadcrumbs)
+    - [Breadcrumbs](#breadcrumbs)
 - [Orbit](#orbit)
 
 > Latest docs: https://foundation.zurb.com/sites/docs/index.html

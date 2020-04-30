@@ -5,6 +5,7 @@ date: 2020-01-20 22:11
 category: Languages
 tag:
   - korean
+layout: page
 ---
 
 # Korean Notes

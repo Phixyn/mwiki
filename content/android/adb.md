@@ -7,6 +7,7 @@ category: Android
 tag:
   - android
   - adb
+layout: page
 ---
 
 # Android Debug Bridge (ADB) Cheatsheet
@@ -20,7 +21,7 @@ tag:
 - [Screen Resolution and Density](#screen-resolution-and-density)
 - [Logcat](#logcat)
 - [Key Events](#key-events)
-  - [Keycode Values](#keycode-values)
+    - [Keycode Values](#keycode-values)
 
 - - -
 

@@ -8,14 +8,15 @@ tag:
   - xctest
   - xcuitest
   - test-automation
+layout: page
 ---
 
 # XCTest Cheatsheet
 
 - [Finding Elements](#finding-elements)
-  - [Advanced Queries](#advanced-queries)
+    - [Advanced Queries](#advanced-queries)
 - [Interacting With Elements](#interacting-with-elements)
-  - [Element Specific](#element-specific)
+    - [Element Specific](#element-specific)
 - [Assertions](#assertions)
 
 - - -
