@@ -7,20 +7,21 @@ category: Programming
 collection: Python
 tag:
   - python
+layout: page
 ---
 
 # Python Cheatsheet
 
 - [Extended Slices](#extended-slices)
 - [Argparse](#argparse)
-  - [Basic Setup](#basic-setup)
-  - [Optional Arguments](#optional-arguments)
-  - [Multiple Values With `nargs`](#multiple-values-with-nargs)
-  - [Type, Metavar and Dest](#type-metavar-and-dest)
-  - [Display Version](#display-version)
+    - [Basic Setup](#basic-setup)
+    - [Optional Arguments](#optional-arguments)
+    - [Multiple Values With `nargs`](#multiple-values-with-nargs)
+    - [Type, Metavar and Dest](#type-metavar-and-dest)
+    - [Display Version](#display-version)
 - [Logging](#logging)
-  - [Basic Logger Setup](#basic-logger-setup)
-  - [Logging Handlers](#logging-handlers)
+    - [Basic Logger Setup](#basic-logger-setup)
+    - [Logging Handlers](#logging-handlers)
 
 - - -
 

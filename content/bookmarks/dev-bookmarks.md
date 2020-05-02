@@ -16,6 +16,7 @@ layout: page
 - [Blogs](#blogs)
 - [Tools](#tools)
 - [Design Patterns](#design-patterns)
+- [Tips](#tips)
 
 - - -
 
@@ -39,3 +40,7 @@ layout: page
 * [Refactoring and Design Patterns](https://refactoring.guru/)
 * [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 * [Builder Pattern · iluwatar/java-design-patterns · GitHub](https://github.com/iluwatar/java-design-patterns/tree/master/builder)
+
+## Tips
+
+* [5 Useful Tips For A Better Commit Message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)

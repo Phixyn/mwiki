@@ -16,9 +16,9 @@ layout: page
 - [Documentation and Guides](#documentation-and-guides)
 - [Low-Level Python](#low-level-python)
 - [Testing With Python](#testing-with-python)
-  - [Pytest](#pytest)
-  - [Test Tools](#test-tools)
-  - [Test Automation](#test-automation)
+    - [Pytest](#pytest)
+    - [Test Tools](#test-tools)
+    - [Test Automation](#test-automation)
 
 - - -
 

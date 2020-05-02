@@ -47,7 +47,7 @@ layout: page
 
 1. v (to enter Visual mode)
 2. g + ((CTRL + N) * lines) to add new cursors - use CTRL + P while in this mode to undo a cursor (while doing this, it'll say you're in Normal mode)
-   * Use CTRL + x to skip a match
+    * Use CTRL + x to skip a match
 3. v (to go back to Normal mode)
 4. i (to enter Insert mode - you won't see this displayed in your current mode, it'll stay as Normal)
 5. ESC twice when done (one to exit Insert mode, one to exit the cursor mode) - move your cursor (up/down arrows) to make the old ones go away

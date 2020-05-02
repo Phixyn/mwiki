@@ -7,17 +7,18 @@ tag:
   - continuous-integration
   - ci-cd
   - jenkins
+layout: page
 ---
 
 # Jenkins Pipeline Cheatsheet
 
 - [Archiving Artifacts](#archiving-artifacts)
 - [Variables](#variables)
-  - [Global Variables](#global-variables)
-  - [Environment Variables](#environment-variables)
-  - [Storing shell STDOUT values](#storing-shell-stdout-values)
+    - [Global Variables](#global-variables)
+    - [Environment Variables](#environment-variables)
+    - [Storing shell STDOUT values](#storing-shell-stdout-values)
 - [Triggers](#triggers)
-  - [Conditional Triggers](#conditional-triggers)
+    - [Conditional Triggers](#conditional-triggers)
 
 ## Archiving Artifacts
 

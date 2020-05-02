@@ -19,7 +19,7 @@ layout: page
 - [Ebooks and Resources](#ebooks-and-resources)
 - [Tools](#tools)
 - [Appium / Selenium](#appium--selenium)
-  - [Page Object Pattern](#page-object-pattern)
+    - [Page Object Pattern](#page-object-pattern)
 
 - - -
 
@@ -31,7 +31,7 @@ layout: page
 ## Security Testing
 
 * [iOS Basic Security Testing - Mobile Security Testing Guide](https://mobile-security.gitbook.io/mobile-security-testing-guide/ios-testing-guide/0x06b-basic-security-testing)
-  * [GitHub - FSecureLABS/needle: The iOS Security Testing Framework](https://github.com/FSecureLABS/needle)
+    * [GitHub - FSecureLABS/needle: The iOS Security Testing Framework](https://github.com/FSecureLABS/needle)
 * [Top Free Security Testing Tools](https://testguild.com/security-testing-tools/)
 
 ## Ebooks and Resources

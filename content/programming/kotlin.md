@@ -8,6 +8,7 @@ collection: Kotlin
 tag:
   - kotlin
   - android
+layout: page
 ---
 
 # Kotlin Cheatsheet
@@ -19,20 +20,20 @@ tag:
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
 
 - [Variables](#variables)
-  - [Mutability](#mutability)
-  - [Inferred Types and Deferred Assignment](#inferred-types-and-deferred-assignment)
-  - [Strings](#strings)
+    - [Mutability](#mutability)
+    - [Inferred Types and Deferred Assignment](#inferred-types-and-deferred-assignment)
+    - [Strings](#strings)
 - [Control Flow](#control-flow)
-  - [Using `if` As An Expression](#using-if-as-an-expression)
-  - [`for` Loops](#for-loops)
-  - [`while` Loops](#while-loops)
-  - [`when` Statement](#when-statement)
+    - [Using `if` As An Expression](#using-if-as-an-expression)
+    - [`for` Loops](#for-loops)
+    - [`while` Loops](#while-loops)
+    - [`when` Statement](#when-statement)
 - [Functions](#functions)
-  - [Parameters & Return Types](#parameters--return-types)
-  - [Function Expressions](#function-expressions)
-  - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
+    - [Parameters & Return Types](#parameters--return-types)
+    - [Function Expressions](#function-expressions)
+    - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
 - [Classes](#classes)
-  - [Primary Constructor](#primary-constructor)
+    - [Primary Constructor](#primary-constructor)
 
 - - -
 
