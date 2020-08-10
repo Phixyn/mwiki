@@ -13,6 +13,8 @@ layout: page
 # Kotlin Bookmarks
 
 - [General](#general)
+- [Example Projects](#example-projects)
+- [To add to cheatsheet](#to-add-to-cheatsheet)
 
 - - -
 
@@ -22,5 +24,18 @@ layout: page
 * [Coding Conventions - Kotlin Programming Language](https://kotlinlang.org/docs/reference/coding-conventions.html)
 * [Kotlin Anti Patterns · Zhuinden/guide-to-kotlin Wiki · GitHub](https://github.com/Zhuinden/guide-to-kotlin/wiki/6%2E%29%2DAnti-Patterns)
 * [Mastering Kotlin standard functions: `run`, `with`, `let`, `also` and `apply`](https://medium.com/@elye.project/mastering-kotlin-standard-functions-run-with-let-also-and-apply-9cd334b0ef84)
+
 * [Kotlin Scoping Functions `apply` vs. `with`, `let`, `also`, and `run`](https://medium.com/@fatihcoskun/kotlin-scoping-functions-apply-vs-with-let-also-run-816e4efb75f5)
 * [Utils class in Kotlin - ProAndroidDev](https://proandroiddev.com/utils-class-in-kotlin-387a09b8d495)
+
+## Example Projects
+
+* [GitHub - mrcsxsiq/Kotlin-Pokedex: A Pokedex app using ViewModel, LiveData, Room and Navigation](https://github.com/mrcsxsiq/Kotlin-Pokedex)
+
+## To add to cheatsheet
+
+![](https://miro.medium.com/max/1262/1*Hw8Ki9isYtXTxBP4uckpCw.png)
+
+* [Kotlin Standard Scoping Functions Cheatsheet/Matrix - Google Sheets](https://docs.google.com/spreadsheets/d/1P2gMRuu36pSDW4fdwE-fLN9fcA_ZboIU2Q5VtgixBNo/edit#gid=0) (take a screenshot)
+
+Add associateWith to cheatsheet
