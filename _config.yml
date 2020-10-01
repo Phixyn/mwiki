@@ -14,6 +14,8 @@ category:
     label: CI/CD
   - name: ios
     label: iOS
+  - name: machine-learning
+    label: Machine Learning
   - name: macos
     label: MacOS
   - name: version-control

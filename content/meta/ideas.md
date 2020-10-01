@@ -8,6 +8,7 @@ tag:
   - todo
   - meta
 layout: page
+draft: true
 ---
 
 # Ideas
