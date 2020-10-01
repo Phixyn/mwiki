@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Fundamentals
-description: Core concepts, introduction to ML and fundamentals.
+description: Bookmark links to core concepts, introduction to ML and fundamentals.
 date: 2020-04-27 04:03
 category: Machine Learning
 tag:

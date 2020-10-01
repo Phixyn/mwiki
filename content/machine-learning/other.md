@@ -1,6 +1,6 @@
 ---
 title: Other
-description: Other ML related resources.
+description: Bookmark links to other ML related resources.
 date: 2020-05-02 19:12
 category: Machine Learning
 tag:

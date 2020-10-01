@@ -1,6 +1,6 @@
 ---
 title: Statistics
-description: Statistic topics related and/or useful in Machine Learning.
+description: Bookmark links to statistic topics related and/or useful in Machine Learning.
 date: 2020-05-02 19:11
 category: Machine Learning
 tag:

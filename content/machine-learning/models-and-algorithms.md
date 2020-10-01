@@ -1,6 +1,6 @@
 ---
 title: Models And Algorithms
-description: ML models, types of algorithms, algorithms and model selection.
+description: Bookmark links to ML models, types of algorithms, algorithms and model selection.
 date: 2020-04-23 22:38
 updated: 2020-04-27 04:12
 category: Machine Learning
