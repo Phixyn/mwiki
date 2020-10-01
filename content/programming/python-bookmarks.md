@@ -65,7 +65,7 @@ layout: page
 
 ## Messaging
 
-* https://pyzmq.readthedocs.io/en/latest/api/index.html
+* [The PyZMQ API — PyZMQ 19.0.0 documentation](https://pyzmq.readthedocs.io/en/latest/api/index.html)
 
 ## Profiling
 
@@ -89,7 +89,7 @@ pip3 install pyprof2calltree
 pyprof2calltree -k -i myscript.cprof
 ```
 
-Saving line profiler output (do this before changing the code, else numbers won't match)
+Saving line profiler output (do this before changing the code, or else the numbers won't match)
 
 ```
 python -m line_profiler dckern.kprof > non-optimized_report.txt
@@ -106,7 +106,7 @@ python -m line_profiler dckern.kprof > non-optimized_report.txt
 
 ## Data Compression
 
-* https://github.com/Blosc/python-blosc/wiki/Quick-User's-Guide
+* [Quick User's Guide · Blosc/python-blosc Wiki · GitHub](https://github.com/Blosc/python-blosc/wiki/Quick-User's-Guide)
 
 ## Testing With Python
 
