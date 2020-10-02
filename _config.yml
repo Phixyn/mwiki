@@ -12,6 +12,8 @@ theme: yasimple_x2
 category:
   - name: continuous-integration
     label: CI/CD
+  - name: front-end-development
+    label: Front-End Development
   - name: ios
     label: iOS
   - name: machine-learning
