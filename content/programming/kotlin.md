@@ -14,7 +14,7 @@ layout: page
 # Kotlin Cheatsheet
 
 <p align="center">
-<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/programming/kotlin/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
@@ -34,6 +34,9 @@ layout: page
     - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
 - [Classes](#classes)
     - [Primary Constructor](#primary-constructor)
+- [Scoping Functions](#scoping-functions)
+    - [How To Choose a Scoping Function](#how-to-choose-a-scoping-function)
+- [`associateWith` and Related Functions](#associatewith-and-related-functions)
 
 - - -
 
@@ -205,3 +208,39 @@ callbackIfTrue(someBoolean) {
 class Person(val name: String, val age: Int)
 val zoey = Person("Zoey", 21)
 ```
+
+## Scoping Functions
+
+![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions2.png?raw=true)
+
+### How To Choose a Scoping Function
+
+![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
+
+**See also:**
+
+[Mastering Kotlin standard functions: `run`, `with`, `let`, `also` and `apply`](https://medium.com/@elye.project/mastering-kotlin-standard-functions-run-with-let-also-and-apply-9cd334b0ef84)
+[Kotlin Scoping Functions `apply` vs. `with`, `let`, `also`, and `run`](https://medium.com/@fatihcoskun/kotlin-scoping-functions-apply-vs-with-let-also-run-816e4efb75f5)
+
+
+## `associateWith` and Related Functions
+
+> Handy thing someone taught me at work.
+
+Use the `associateWith` method to convert a collection into a Map where the keys are collection items and the values are obtained by calling a given lambda on each item.
+
+**Examples:**
+
+```kotlin
+val list = listOf(1, 2, 3, 4, 5)
+val squares = list.associateWith { it * it }
+println(squares) // {1=1, 2=4, 3=9, 4=16, 5=25}
+```
+
+```kotlin
+val words = listOf("a", "abc", "ab", "def", "abcd")
+val withLength = words.associateWith { it.length }
+println(withLength) // {a=1, abc=3, ab=2, def=3, abcd=4}
+```
+
+Similar functions: `associate`, `associateBy`, `associateByTo`, `associateTo`, `associateWith`, `associateWithTo`

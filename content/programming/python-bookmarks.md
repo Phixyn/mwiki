@@ -15,6 +15,13 @@ layout: page
 - [General](#general)
 - [Documentation and Guides](#documentation-and-guides)
 - [Low-Level Python](#low-level-python)
+- [IPC](#ipc)
+    - [asyncio](#asyncio)
+- [Messaging](#messaging)
+- [Profiling](#profiling)
+    - [Visualizers](#visualizers)
+    - [Articles](#articles)
+- [Data Compression](#data-compression)
 - [Testing With Python](#testing-with-python)
     - [Pytest](#pytest)
     - [Test Tools](#test-tools)
@@ -28,6 +35,7 @@ layout: page
 * [Python Tips Book - Decorators](http://book.pythontips.com/en/latest/decorators.html) - whole site seems good
 * [One-Liners — Python Tips 0.1 documentation](http://book.pythontips.com/en/latest/one_liners.html)
 * [Python Pandemonium – Medium](https://medium.com/python-pandemonium)
+* ['not x is None' vs 'x is not None'](https://legacy.python.org/dev/peps/pep-0008/#programming-recommendations) - PEP8 says it's a matter of readability
 
 ## Documentation and Guides
 
@@ -46,6 +54,59 @@ layout: page
 * [Working with Binary Data in Python | DevDungeon](https://www.devdungeon.com/content/working-binary-data-python)
 * [Python Bits and Bytes](https://www.theunterminatedstring.com/python-bits-and-bytes/)
 * [struct — Interpret bytes as packed binary data — Python 3.7.6 documentation](https://docs.python.org/3.7/library/struct.html#struct-examples)
+
+## IPC
+
+* [Networking and Interprocess Communication — Python 3.8.3 documentation](https://docs.python.org/3/library/ipc.html)
+
+### asyncio
+
+* [Coroutines and Tasks — Python 3.8.3 documentation](https://docs.python.org/3/library/asyncio-task.html)
+
+## Messaging
+
+* [The PyZMQ API — PyZMQ 19.0.0 documentation](https://pyzmq.readthedocs.io/en/latest/api/index.html)
+
+## Profiling
+
+* cProfile (standard lib)
+* [GitHub - joerick/pyinstrument: Call stack profiler for Python.](https://github.com/joerick/pyinstrument)
+* [GitHub - benfred/py-spy: Sampling profiler for Python programs](https://github.com/benfred/py-spy)
+* [GitHub - pyutils/line_profiler: Line-by-line profiling for Python](https://github.com/pyutils/line_profiler)
+* [GitHub - fabianp/memory_profiler: Monitor Memory usage of Python code](https://github.com/fabianp/memory_profiler)
+
+### Visualizers
+
+* [SnakeViz](https://jiffyclub.github.io/snakeviz/)
+* [GitHub - jrfonseca/gprof2dot: Converts profiling output to a dot graph.](https://github.com/jrfonseca/gprof2dot)
+
+kcachegrind reading cProfile data converted with `pyprof2calltree`:
+
+```sh
+brew install qcachegrind --with-graphviz
+pip3 install pyprof2calltree
+
+pyprof2calltree -k -i myscript.cprof
+```
+
+Saving line profiler output (do this before changing the code, or else the numbers won't match)
+
+```
+python -m line_profiler dckern.kprof > non-optimized_report.txt
+```
+
+### Articles
+
+* [Python Profilers: Learn the Basics of a profiler for Python in this blog](https://stackify.com/how-to-use-python-profilers-learn-the-basics/)
+* [Profiling Python using cProfile: a concrete case](https://julien.danjou.info/guide-to-python-profiling-cprofile-concrete-case-carbonara/)
+* [Performance Profiling in Python](https://www.lachlaneagling.com/profiling-python/)
+* [Python Profiling | Medium](https://medium.com/@antoniomdk1/hpc-with-python-part-1-profiling-1dda4d172cdf)
+* [Python profiling - Yves Callaert - Medium](https://medium.com/@yvescallaert/python-profiling-bec32603ec31)
+* [Profiling asyncio code – roguelynn](https://www.roguelynn.com/words/asyncio-profiling/)
+
+## Data Compression
+
+* [Quick User's Guide · Blosc/python-blosc Wiki · GitHub](https://github.com/Blosc/python-blosc/wiki/Quick-User's-Guide)
 
 ## Testing With Python
 

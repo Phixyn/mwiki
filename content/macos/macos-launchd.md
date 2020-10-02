@@ -22,6 +22,9 @@ layout: page
 ## Links
 
 * [A launchd Tutorial](https://www.launchd.info/)
+* [macOS launchd Service Management | myByways](https://mybyways.com/blog/macos-launchd-service-management)
+* [Launchctl 2.0 Syntax | Babo D's Corner](https://babodee.wordpress.com/2016/04/09/launchctl-2-0-syntax/)
+* [Creating Launch Daemons and Agents](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html)
 
 ## `plist` File Locations
 
