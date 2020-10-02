@@ -18,6 +18,8 @@ Notes about this video: [Web Development In 2020 - A Practical Guide - YouTube](
 
 Repo with resources: [GitHub - andrews1022/web-development-2020-course-list: A list of Udemy courses from Brad Traversy's Web Development 2020 video](https://github.com/andrews1022/web-development-2020-course-list)
 
+Emmet cheatsheet: [https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
