@@ -217,6 +217,12 @@ val zoey = Person("Zoey", 21)
 
 ![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
 
+**See also:**
+
+[Mastering Kotlin standard functions: `run`, `with`, `let`, `also` and `apply`](https://medium.com/@elye.project/mastering-kotlin-standard-functions-run-with-let-also-and-apply-9cd334b0ef84)
+[Kotlin Scoping Functions `apply` vs. `with`, `let`, `also`, and `run`](https://medium.com/@fatihcoskun/kotlin-scoping-functions-apply-vs-with-let-also-run-816e4efb75f5)
+
+
 ## `associateWith` and Related Functions
 
 > Handy thing someone taught me at work.
