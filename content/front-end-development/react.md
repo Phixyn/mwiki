@@ -1,5 +1,5 @@
 ---
-title: React Cheatsheet
+title: React
 description: Cheatsheet, notes and links about the React framework.
 date: 2020-09-08 01:52
 category: Front-End Development
@@ -12,7 +12,7 @@ tag:
 layout: page
 ---
 
-# React Cheatsheet
+# React
 
 - [Getting Started](#getting-started)
 - [To Read](#to-read)
