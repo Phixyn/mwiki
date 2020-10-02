@@ -1,5 +1,5 @@
 ---
-title: Models And Algorithms
+title: Models and Algorithms
 description: Bookmark links to ML models, types of algorithms, algorithms and model selection.
 date: 2020-04-23 22:38
 updated: 2020-04-27 04:12
@@ -11,17 +11,17 @@ tag:
 layout: page
 ---
 
-# Models And Algorithms
+# Models and Algorithms
 
-- [Types Of Algorithms](#types-of-algorithms)
-- [Models And Algorithms](#models-and-algorithms)
+- [Types of Algorithms](#types-of-algorithms)
+- [Models and Algorithms](#models-and-algorithms)
     - [Decision Tree](#decision-tree)
-    - [Classification And Classifiers](#classification-and-classifiers)
+    - [Classification and Classifiers](#classification-and-classifiers)
     - [Regression](#regression)
 
 - - -
 
-## Types Of Algorithms
+## Types of Algorithms
 
 * [Supervised learning - Wikipedia](https://en.wikipedia.org/wiki/Supervised_learning)
 * [Unsupervised learning - Wikipedia](https://en.wikipedia.org/wiki/Unsupervised_learning)
@@ -31,7 +31,7 @@ layout: page
 * [Difference between Classification and Regression - Georgia Tech - Machine Learning - YouTube](https://www.youtube.com/watch?v=i04Pfrb71vk)
 * [Regression and Classification | Supervised Machine Learning - GeeksforGeeks](https://www.geeksforgeeks.org/regression-classification-supervised-machine-learning/)
 
-## Models And Algorithms
+## Models and Algorithms
 
 * [A Beginner's Guide to Selecting Machine Learning Predictive Models in Python](https://towardsdatascience.com/the-beginners-guide-to-selecting-machine-learning-predictive-models-in-python-f2eb594e4ddc)
 * [How to Choose ML Algorithms for Regression Problems?](https://geekflare.com/choosing-ml-algorithms/)
@@ -50,7 +50,7 @@ layout: page
 * [Decision Tree Algorithm | Decision Tree in Python | Machine Learning Algorithms | Edureka - YouTube](https://www.youtube.com/watch?v=qDcl-FRnwSU)
 * [Machine Learning with Python - Part 2: Decision Tree - YouTube](https://www.youtube.com/watch?v=XDbj6PxaSf0)
 
-### Classification And Classifiers
+### Classification and Classifiers
 
 * [Statistical classification - Wikipedia](https://en.wikipedia.org/wiki/Statistical_classification)
 * [Statistical learning in language acquisition - Wikipedia](https://en.wikipedia.org/wiki/Statistical_learning_in_language_acquisition)
