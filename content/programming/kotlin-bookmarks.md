@@ -36,8 +36,4 @@ layout: page
 
 ## To add to cheatsheet
 
-![](https://miro.medium.com/max/1262/1*Hw8Ki9isYtXTxBP4uckpCw.png)
-
-* [Kotlin Standard Scoping Functions Cheatsheet/Matrix - Google Sheets](https://docs.google.com/spreadsheets/d/1P2gMRuu36pSDW4fdwE-fLN9fcA_ZboIU2Q5VtgixBNo/edit#gid=0) (take a screenshot)
-
 Add associateWith to cheatsheet

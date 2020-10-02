@@ -14,7 +14,7 @@ layout: page
 # Kotlin Cheatsheet
 
 <p align="center">
-<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/programming/kotlin/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
@@ -34,6 +34,8 @@ layout: page
     - [Higher Order Functions / Lambdas](#higher-order-functions--lambdas)
 - [Classes](#classes)
     - [Primary Constructor](#primary-constructor)
+- [Scoping Functions](#scoping-functions)
+    - [How To Choose a Scoping Function](#how-to-choose-a-scoping-function)
 
 - - -
 
@@ -205,3 +207,11 @@ callbackIfTrue(someBoolean) {
 class Person(val name: String, val age: Int)
 val zoey = Person("Zoey", 21)
 ```
+
+## Scoping Functions
+
+![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions2.png?raw=true)
+
+### How To Choose a Scoping Function
+
+![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
