@@ -14,7 +14,6 @@ layout: page
 
 - [General](#general)
 - [Example Projects](#example-projects)
-- [To add to cheatsheet](#to-add-to-cheatsheet)
 
 - - -
 
@@ -33,7 +32,3 @@ layout: page
 ## Example Projects
 
 * [GitHub - mrcsxsiq/Kotlin-Pokedex: A Pokedex app using ViewModel, LiveData, Room and Navigation](https://github.com/mrcsxsiq/Kotlin-Pokedex)
-
-## To add to cheatsheet
-
-Add associateWith to cheatsheet

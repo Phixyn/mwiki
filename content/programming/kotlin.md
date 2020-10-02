@@ -36,6 +36,7 @@ layout: page
     - [Primary Constructor](#primary-constructor)
 - [Scoping Functions](#scoping-functions)
     - [How To Choose a Scoping Function](#how-to-choose-a-scoping-function)
+- [`associateWith` and Related Functions](#associatewith-and-related-functions)
 
 - - -
 
@@ -215,3 +216,25 @@ val zoey = Person("Zoey", 21)
 ### How To Choose a Scoping Function
 
 ![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
+
+## `associateWith` and Related Functions
+
+> Handy thing someone taught me at work.
+
+Use the `associateWith` method to convert a collection into a Map where the keys are collection items and the values are obtained by calling a given lambda on each item.
+
+**Examples:**
+
+```kotlin
+val list = listOf(1, 2, 3, 4, 5)
+val squares = list.associateWith { it * it }
+println(squares) // {1=1, 2=4, 3=9, 4=16, 5=25}
+```
+
+```kotlin
+val words = listOf("a", "abc", "ab", "def", "abcd")
+val withLength = words.associateWith { it.length }
+println(withLength) // {a=1, abc=3, ab=2, def=3, abcd=4}
+```
+
+Similar functions: `associate`, `associateBy`, `associateByTo`, `associateTo`, `associateWith`, `associateWithTo`
