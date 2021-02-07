@@ -50,6 +50,10 @@ Emmet cheatsheet: [https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/che
 * Netlify (static hosting). Also GitHub pages I guess.
 * Managed hosting: InMotion, Hostgator, Bluehost
 * Namecheap domain registrar
+* Tools for contact forms:
+    * Netlify forms
+    * https://gridsome.org/docs/guide-forms/
+* [Headless CMS](https://jamstack.org/headless-cms/) - A List of Content Management Systems for Jamstack Sites
 
 ## Things to learn
 
@@ -156,7 +160,7 @@ Also check out: Progressive Web Apps
 * **Responsive Portfolio Project** (custom reusable CSS components)
 * Fancy Form UI (custom reusable CSS components)
 * Maybe: Social Network Theme With Sass (custom reusable CSS components)
-* Tailwind CSS Crash Course
+* ~~Tailwind CSS Crash Course~~
 * NPM Crash Course
 * Yarn Crash Course
 * **Axios Crash Course**
