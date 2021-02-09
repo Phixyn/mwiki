@@ -10,18 +10,18 @@ module.exports = {
       {
         title: "Android",
         children: [
-          "/android/adb",
           "/android/android-bookmarks",
+          "/android/adb",
           "/android/gradle"
         ],
       },
       {
         title: "Bookmarks",
         children: [
-          "/bookmarks/ble-bookmarks",
           "/bookmarks/dev-bookmarks",
           "/bookmarks/qa-bookmarks",
-          "/bookmarks/tools-bookmarks"
+          "/bookmarks/tools-bookmarks",
+          "/bookmarks/ble-bookmarks"
         ]
       },
       {
@@ -34,9 +34,9 @@ module.exports = {
       {
         title: "Front-End Development",
         children: [
+          "/front-end-development/vue-js",
           "/front-end-development/gridsome",
-          "/front-end-development/react",
-          "/front-end-development/vue-js"
+          "/front-end-development/react"
         ]
       },
       {
@@ -57,9 +57,9 @@ module.exports = {
         children: [
           "/machine-learning/fundamentals",
           "/machine-learning/models-and-algorithms",
-          "/machine-learning/other",
+          "/machine-learning/tutorials",
           "/machine-learning/statistics",
-          "/machine-learning/tutorials"
+          "/machine-learning/other",
         ]
       },
       {
@@ -73,10 +73,10 @@ module.exports = {
       {
         title: "Programming",
         children: [
-          "/programming/groovy-notes",
           "/programming/java-bookmarks",
           "/programming/kotlin-bookmarks",
           "/programming/kotlin",
+          "/programming/groovy-notes",
           "/programming/python-bookmarks",
           "/programming/python",
           "/programming/shells-bookmarks",
