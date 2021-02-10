@@ -52,13 +52,13 @@ def getVersionName() {
 
 ### Usage In Gradle Tasks
 
-```gradle
+```groovy
 task printVersionName {
     println getVersionName()
 }
 ```
 
-```gradle
+```groovy
 task printVersionName {
     def versionName = getVersionName()
     doLast {
