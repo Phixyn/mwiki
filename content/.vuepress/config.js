@@ -2,6 +2,10 @@ module.exports = {
   title: "MWiki",
   description: "Phixyn's personal wiki",
   themeConfig: {
+    nav: [
+      { text: "Phixyn", link: "https://phixyn.com/" },
+      { text: "GitHub", link: "https://github.com/Phixyn/mwiki" }
+    ],
     sidebar: [
       {
         title: "Home",
