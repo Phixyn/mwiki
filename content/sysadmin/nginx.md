@@ -3,7 +3,7 @@ title: Nginx
 description: Notes about Nginx.
 date: 2020-11-03 21:15
 category: Sysadmin
-tag: 
+tags: 
   - servers
   - web-server
   - linux

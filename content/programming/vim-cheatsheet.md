@@ -3,7 +3,7 @@ title: Vim Cheatsheet
 description: Vim shortcuts and commands cheatsheet.
 date: 2020-01-21 01:41
 category: Programming
-tag:
+tags:
   - vim
   - linux
   - unix

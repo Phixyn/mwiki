@@ -4,7 +4,7 @@ description: Notes and commands about managing jobs and services on MacOS with l
 date: 2020-01-20 21:46
 updated: 2020-03-01 19:00
 category: MacOS
-tag:
+tags:
   - launchd
   - plist
 layout: page

@@ -3,7 +3,7 @@ title: Vue.js
 description: Cheatsheet, notes and links about Vue.js.
 date: 2020-10-02 07:59
 category: Front-End Development
-tag:
+tags:
   - front-end
   - front-end-development
   - web-development

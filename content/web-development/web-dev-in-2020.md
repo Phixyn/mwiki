@@ -3,7 +3,7 @@ title: Web Development In 2020 - A Practical Guide
 description: Notes about the Traversy Media state of Web Development in 2020 video.
 date: 2020-10-01 04:30
 category: Web Development
-tag:
+tags:
   - web-development
   - front-end
   - back-end

@@ -2,7 +2,7 @@
 title: Android Bookmarks
 date: 2020-01-17 13:41
 category: Android
-tag:
+tags:
   - android
   - test-automation
   - unit-testing

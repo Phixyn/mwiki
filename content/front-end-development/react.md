@@ -3,7 +3,7 @@ title: React
 description: Cheatsheet, notes and links about the React framework.
 date: 2020-09-08 01:52
 category: Front-End Development
-tag:
+tags:
   - front-end
   - front-end-development
   - web-development

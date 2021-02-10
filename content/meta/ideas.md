@@ -3,7 +3,7 @@ title: Ideas
 description: Ideas for new wiki content, things to add and improve.
 date: 2020-01-20 22:11
 category: Meta
-tag:
+tags:
   - ideas
   - todo
   - meta

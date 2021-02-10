@@ -4,7 +4,7 @@ description: Android Debug Bridge commands.
 date: 2020-01-20 22:11
 updated: 2020-03-01 19:00
 category: Android
-tag:
+tags:
   - android
   - adb
 layout: page

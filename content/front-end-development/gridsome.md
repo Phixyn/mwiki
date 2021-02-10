@@ -3,7 +3,7 @@ title: Gridsome
 description: Notes and links about Gridsome, a Vue.js powered Jamstack framework.
 date: 2020-10-06 00:04
 category: Front-End Development
-tag: 
+tags: 
   - front-end-development
   - web-development
   - vue-js

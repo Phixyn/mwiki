@@ -5,7 +5,7 @@ date: 2020-01-21 01:38
 updated: 2020-03-01 19:00
 category: Programming
 collection: Shells
-tag:
+tags:
   - shell
   - bash
   - linux

@@ -4,7 +4,7 @@ date: 2020-02-25 22:22
 updated: 2020-03-01 19:00
 category: Programming
 collection: Kotlin
-tag:
+tags:
   - kotlin
   - android
 layout: page

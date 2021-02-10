@@ -3,7 +3,7 @@ title: QA Bookmarks
 description: Bookmarks for QA related resources.
 date: 2020-01-17 12:45
 category: Bookmarks
-tag:
+tags:
   - qa
   - test-automation
   - manual-testing
