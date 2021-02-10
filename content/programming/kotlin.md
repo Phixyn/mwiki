@@ -14,7 +14,7 @@ layout: page
 # Kotlin Cheatsheet
 
 <p align="center">
-<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../../attach/programming/kotlin/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
+<a href="https://kotlinlang.org/"><img alt="Kotlin Logo" src="../.vuepress/public/programming/kotlin/kotlin-logo-text.png?raw=true" width="50%" height="50%" /></a>
 </p>
 
 > Kotlin is a statically typed programming language for modern multiplatform applications. It is a JVM language.
@@ -211,11 +211,11 @@ val zoey = Person("Zoey", 21)
 
 ## Scoping Functions
 
-![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions2.png?raw=true)
+![How To Choose a Scoping Function (Image)](../.vuepress/public/programming/kotlin/kotlin-standard-scoping-functions2.png?raw=true)
 
 ### How To Choose a Scoping Function
 
-![How To Choose a Scoping Function (Image)](../../attach/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
+![How To Choose a Scoping Function (Image)](../.vuepress/public/programming/kotlin/kotlin-standard-scoping-functions.png?raw=true)
 
 **See also:**
 
