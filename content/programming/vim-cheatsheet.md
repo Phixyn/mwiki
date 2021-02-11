@@ -54,4 +54,6 @@ layout: page
 
 ## Infographic
 
-![vim-1.png](https://linuxacademy.com/site-content/uploads/2019/05/vim-1.png)
+![Vim Infographic (Image)](../.vuepress/public/programming/vim/vim-infographic.png?raw=true)
+
+> Source: [https://linuxacademy.com](https://linuxacademy.com)
