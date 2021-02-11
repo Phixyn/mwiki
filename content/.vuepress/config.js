@@ -1,6 +1,9 @@
 module.exports = {
   title: "MWiki",
   description: "Phixyn's personal wiki",
+  head: [
+    ["meta", { name: "robots", content: "noindex, nofollow" }]
+  ],
   themeConfig: {
     searchPlaceholder: "Search...",
     lastUpdated: "Last updated",
