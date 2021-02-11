@@ -2,7 +2,7 @@
 title: Jenkins Bookmarks
 date: 2020-01-17 12:41
 category: Continuous Integration
-tag:
+tags:
   - continuous-integration
   - ci-cd
   - jenkins

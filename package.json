@@ -1,0 +1,27 @@
+{
+  "name": "mwiki",
+  "version": "2.0.0",
+  "description": "Phixyn's personal wiki.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev content",
+    "build": "vuepress build content"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phixyn/mwiki.git"
+  },
+  "keywords": [
+    "vuepress",
+    "wiki"
+  ],
+  "author": "Phixyn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phixyn/mwiki/issues"
+  },
+  "homepage": "https://github.com/Phixyn/mwiki#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.0"
+  }
+}

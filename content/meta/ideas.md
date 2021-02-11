@@ -3,7 +3,7 @@ title: Ideas
 description: Ideas for new wiki content, things to add and improve.
 date: 2020-01-20 22:11
 category: Meta
-tag:
+tags:
   - ideas
   - todo
   - meta
@@ -24,10 +24,12 @@ _Ideas for new cheatsheets_
 * [ ] Weechat
 * [ ] iTerm2: https://gist.github.com/nobitagit/729fc16b8c16edb9a2fe390d6f312c66
 * [x] Zurb Foundation
-* [ ] SysAdmin
+* [x] SysAdmin
 
 ## TODO
 
+* [ ] Write a shell or Python script that auto-generates the sidebar configuration for `.vuepress/config.js`
+* [ ] Move everything from Bookmarks into Lanae project and delete bookmarks' pages
 * [ ] Improve Kotlin Control Flow section and sub-sections
 * [ ] Kotlin: section on Ranges?
 * [ ] Python: expand argparse with explanations of the different add_arguments, and fix line lenghts?

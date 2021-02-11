@@ -2,7 +2,7 @@
 title: Java Bookmarks
 date: 2020-01-17 12:01
 category: Programming
-tag:
+tags:
   - java
   - maven
 layout: page

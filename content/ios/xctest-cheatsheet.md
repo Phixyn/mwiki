@@ -3,7 +3,7 @@ title: XCTest Cheatsheet
 description: A reference for XCTest.
 date: 2020-01-20 21:46
 category: iOS
-tag:
+tags:
   - ios
   - xctest
   - xcuitest

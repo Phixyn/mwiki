@@ -3,7 +3,7 @@ title: Tutorials
 description: Bookmark links to Machine Learning tutorials.
 date: 2020-05-02 19:08
 category: Machine Learning
-tag:
+tags:
   - ml-tutorials
   - ml-algorithms
   - ml-models

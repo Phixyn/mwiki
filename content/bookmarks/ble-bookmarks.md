@@ -3,7 +3,7 @@ title: BLE Bookmarks
 description: Bookmarks for BLE (Bluetooth Low Energy) resources.
 date: 2020-01-17 12:32
 category: Bookmarks
-tag:
+tags:
   - bluetooth-low-energy
   - ble
 layout: page

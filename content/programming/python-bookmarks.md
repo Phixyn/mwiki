@@ -4,7 +4,7 @@ date: 2020-01-17 12:48
 updated: 2020-03-01 19:00
 category: Programming
 collection: Python
-tag:
+tags:
   - python
   - pytest
 layout: page

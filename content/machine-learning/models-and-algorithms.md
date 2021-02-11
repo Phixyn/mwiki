@@ -4,7 +4,7 @@ description: Bookmark links to ML models, types of algorithms, algorithms and mo
 date: 2020-04-23 22:38
 updated: 2020-04-27 04:12
 category: Machine Learning
-tag:
+tags:
   - ml-algorithms
   - ml-models
   - ml-model-selection

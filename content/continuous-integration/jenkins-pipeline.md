@@ -3,7 +3,7 @@ title: Jenkins Pipeline Cheatsheet
 description: Jenkins pipelines notes and findings.
 date: 2020-01-20 22:11
 category: Continuous Integration
-tag:
+tags:
   - continuous-integration
   - ci-cd
   - jenkins

@@ -3,7 +3,7 @@ title: Gradle Cheatsheet
 description: Gradle notes and reference.
 date: 2020-01-20 22:11
 category: Android
-tag:
+tags:
   - android
   - gradle
   - groovy
@@ -52,13 +52,13 @@ def getVersionName() {
 
 ### Usage In Gradle Tasks
 
-```gradle
+```groovy
 task printVersionName {
     println getVersionName()
 }
 ```
 
-```gradle
+```groovy
 task printVersionName {
     def versionName = getVersionName()
     doLast {

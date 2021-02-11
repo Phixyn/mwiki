@@ -3,7 +3,7 @@ title: iOS Bookmarks
 date: 2020-01-17 13:47
 updated: 2020-03-01 19:00
 category: iOS
-tag:
+tags:
   - ios
   - swift
   - fastlane
