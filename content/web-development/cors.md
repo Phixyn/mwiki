@@ -5,7 +5,9 @@ date: 2021-02-17 22:12
 category: Web Development
 tags: 
   - back-end
+  - backend
   - full-stack
+  - servers
   - http
   - web-security
 layout: page
@@ -51,7 +53,7 @@ When developing services such as a RESTful API, it is important that the server 
 To set up CORS on a server:
 
 - Send certain HTTP headers to the browser (see [this section](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers) on the MDN page)
-- Node.js with Express: use the [CORS middleware package](https://www.npmjs.com/package/cors)
+- Node.js with Express: add CORS headers via middleware, or use the [CORS middleware package](https://www.npmjs.com/package/cors)
 - Nginx setup: see [this gist](https://gist.github.com/Stanback/7145487)
 
 ## Bypassing CORS
@@ -62,7 +64,7 @@ As mentioned in the [#Use](#use) section, API testing tools such as Postman do n
 
 In other words, make a proxy server that proxies your front-end application's request, handles it and sends back the response. This is what I did in my [No BS Looper](https://github.com/Phixyn/no-bs-looper) project, where I need to send a request to a particular YouTube API which (for some reason) is behind a server that doesn't allow CORS. You can see the Python code [here](https://github.com/Phixyn/no-bs-looper/blob/f51c861227f1a993b9d9aad55be0b05a091793ad/ws_server.py).
 
-If you're working with Node and Express, you could also perform the external requests from your Express application. There are also other approaches which you can find on this Medium post: [Hacking It Out: When CORS won't let you be great | by Shalvah | Netscape | Medium](https://medium.com/netscape/hacking-it-out-when-cors-wont-let-you-be-great-35f6206cc646)
+If you're working with Node and Express, you could also perform the external requests from your Express application. There are also other approaches which you can find on this Medium post: [Hacking It Out: When CORS won't let you be great | by Shalvah | Netscape | Medium](https://medium.com/netscape/hacking-it-out-when-cors-wont-let-you-be-great-35f6206cc646).
 
 ## Resources
 
