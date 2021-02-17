@@ -35,13 +35,13 @@ module.exports = {
         children: [
           "/front-end-development/vue-js",
           "/front-end-development/gridsome",
-          "/front-end-development/react"
+          "/front-end-development/react",
+          "/front-end-development/foundation"
         ]
       },
       {
         title: "Web Development",
         children: [
-          "/web-development/foundation",
           "/web-development/node-js",
           "/web-development/web-dev-in-2020"
         ]
