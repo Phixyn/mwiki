@@ -42,6 +42,7 @@ module.exports = {
       {
         title: "Web Development",
         children: [
+          "/web-development/cors",
           "/web-development/node-js",
           "/web-development/web-dev-in-2020"
         ]
