@@ -20,13 +20,13 @@ module.exports = {
         title: "Programming",
         children: [
           "/programming/java-bookmarks",
-          "/programming/kotlin-bookmarks",
-          "/programming/kotlin",
+          "/programming/kotlin/kotlin-bookmarks",
+          "/programming/kotlin/kotlin",
           "/programming/groovy-notes",
-          "/programming/python-bookmarks",
-          "/programming/python",
-          "/programming/shells-bookmarks",
-          "/programming/shells-cheatsheet",
+          "/programming/python/python-bookmarks",
+          "/programming/python/python",
+          "/programming/shells/shells-bookmarks",
+          "/programming/shells/shells-cheatsheet",
           "/programming/vim-cheatsheet"
         ]
       },

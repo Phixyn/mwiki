@@ -4,8 +4,7 @@ description: Notes and links about Gridsome, a Vue.js powered Jamstack framework
 date: 2020-10-06 00:04
 category: Front-End Development
 tags: 
-  - front-end-development
-  - web-development
+  - front-end-framework
   - vue-js
   - gridsome
   - jamstack
@@ -76,7 +75,7 @@ Create `.vue` components in the `src/pages` directory to create page routes.
 
 > Plugins that I use frequently.
 
-[@gridsome/source-filesystem](https://gridsome.org/plugins/@gridsome/source-filesystem) - Transform files into content that can be fetched with GraphQL in your components.
+[@gridsome/source-filesystem](https://gridsome.org/plugins/@gridsome/source-filesystem) - Transform files into content that can be fetched with GraphQL in your components.  
 [@gridsome/transformer-remark](https://gridsome.org/plugins/@gridsome/transformer-remark) - Markdown transformer for Gridsome with [Remark](https://remark.js.org/).
 
 - - -
