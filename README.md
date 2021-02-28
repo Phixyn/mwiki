@@ -10,7 +10,7 @@ I like to learn about many different topics and needed a place to organize my kn
 
 Some pages may become stale or outdated over time, so pruning may take place.
 
-## Serving (Hot Reload)
+## Serving
 
 To serve the wiki locally with hot reload:
 
