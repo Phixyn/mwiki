@@ -18,6 +18,7 @@ layout: page
 - [Basic Component](#basic-component)
 - [Fragments](#fragments)
     - [Short Syntax](#short-syntax)
+- [Typechecking With PropTypes](#typechecking-with-proptypes)
 
 - - -
 
@@ -67,7 +68,7 @@ export default ComponentName
 
 Every React component can return at most one HTML element. Sometimes, you might want a component to return multiple HTML elements. The common solution is to wrap these elements inside `<div>` tag. This can eventually lead to a messy DOM.
 
-Fragments let you group a list of children without adding extra nodes to the DOM. This is useful for cases where we don't want to polute the DOM with a bunch of extra `div`s. Fragments are used like any other component:
+Fragments let you group a list of children without adding extra nodes to the DOM. This is useful when we don't want to fill the DOM with a bunch of `<div>` tags. Fragments are used like any other component:
 
 ```jsx
 function About() {
@@ -79,6 +80,8 @@ function About() {
   );
 }
 ```
+
+> _See also: [React Fragments documentation](https://reactjs.org/docs/fragments.html)_
 
 ### Short Syntax
 
@@ -95,4 +98,40 @@ function About() {
 }
 ```
 
-You can use `<> </>` the same way you'd use any other element, except that it doesn't support keys or attributes. For that you'd still use `React.Fragment`.
+You can use `<> </>` in the same way you'd use any other element, except that it doesn't support keys or attributes. For that you'd still use `React.Fragment`.
+
+## Typechecking With PropTypes
+
+Even though you can use TypeScript with React, React also has some built-in typechecking abilities. To run typechecking on the props for a component, you can assign the special `propTypes` property:
+
+```jsx
+import PropTypes from "prop-types"
+
+const Button = (props) => {
+  return (
+    <button
+      style={{ backgroundColor: props.color }}
+      className="btn"
+      onClick={props.onClick}
+    >
+      {props.text}
+    </button>
+  );
+}
+
+// Set up prop typechecking
+Button.propTypes = {
+  color: PropTypes.string,
+  text: PropTypes.string,
+  onClick: PropTypes.func
+}
+
+// You can also give props a default value
+Button.defaultProps = {
+  color: "steelblue"
+}
+
+export default Button
+```
+
+See React's [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html#gatsby-focus-wrapper) documentation for more info.
