@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ["meta", { name: "robots", content: "noindex, nofollow" }]
   ],
+  plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     searchPlaceholder: "Search...",
     lastUpdated: "Last updated",
