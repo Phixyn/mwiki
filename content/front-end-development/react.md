@@ -15,10 +15,12 @@ layout: page
 # React
 
 - [Getting Started](#getting-started)
-- [Basic Component](#basic-component)
+- [Components](#components)
 - [Fragments](#fragments)
     - [Short Syntax](#short-syntax)
 - [Typechecking With PropTypes](#typechecking-with-proptypes)
+- [Useful Packages](#useful-packages)
+    - [React Icons](#react-icons)
 
 - - -
 
@@ -30,7 +32,7 @@ layout: page
 [State and Lifecycle – React](https://reactjs.org/docs/state-and-lifecycle.html)  
 [JSX In Depth – React](https://reactjs.org/docs/jsx-in-depth.html)  
 
-## Basic Component
+## Components
 
 **Class based components:**
 
@@ -135,3 +137,15 @@ export default Button
 ```
 
 See React's [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html#gatsby-focus-wrapper) documentation for more info.
+
+## Useful Packages
+
+### [React Icons](https://react-icons.github.io/react-icons)
+
+Include popular icon fonts in your React projects easily:
+
+```sh
+npm install react-icons
+```
+
+See full [icon list here](https://react-icons.github.io/react-icons/icons).
