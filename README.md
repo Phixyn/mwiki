@@ -17,7 +17,7 @@ To serve the wiki locally with hot reload:
 1. Clone the repository
 2. `cd` into its directory
 3. Run `npm install`
-4. Run `npm run dev`
+4. Run `npm start`
 
 The wiki is served at `localhost:8080` by default.
 
