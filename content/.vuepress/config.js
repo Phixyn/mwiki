@@ -37,6 +37,7 @@ module.exports = {
           "/front-end-development/vue-js",
           "/front-end-development/gridsome",
           "/front-end-development/react",
+          "/front-end-development/cypress",
           "/front-end-development/foundation"
         ]
       },
