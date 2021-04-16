@@ -66,7 +66,15 @@ module.exports = {
       {
         title: "SysAdmin",
         children: [
+          "/sysadmin/docker",
           "/sysadmin/nginx"
+        ]
+      },
+      {
+        title: "Kubernetes",
+        children: [
+          "/kubernetes/kubectl",
+          "/kubernetes/minikube"
         ]
       },
       {
