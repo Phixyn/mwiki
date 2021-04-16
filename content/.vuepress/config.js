@@ -32,6 +32,13 @@ module.exports = {
         ]
       },
       {
+        title: "Version Control",
+        children: [
+          "/version-control/git-bookmarks",
+          "/version-control/git"
+        ]
+      },
+      {
         title: "Front-End Development",
         children: [
           "/front-end-development/vue-js",
@@ -50,20 +57,6 @@ module.exports = {
         ]
       },
       {
-        title: "Version Control",
-        children: [
-          "/version-control/git-bookmarks",
-          "/version-control/git"
-        ]
-      },
-      {
-        title: "CI/CD",
-        children: [
-          "/continuous-integration/jenkins-bookmarks",
-          "/continuous-integration/jenkins-pipeline"
-        ]
-      },
-      {
         title: "SysAdmin",
         children: [
           "/sysadmin/docker",
@@ -75,6 +68,13 @@ module.exports = {
         children: [
           "/kubernetes/kubectl",
           "/kubernetes/minikube"
+        ]
+      },
+      {
+        title: "CI/CD",
+        children: [
+          "/continuous-integration/jenkins-bookmarks",
+          "/continuous-integration/jenkins-pipeline"
         ]
       },
       {
