@@ -14,29 +14,30 @@ layout: page
 # Git Cheatsheet
 
 - [Branches](#branches)
-    - [Create New Branches](#create-new-branches)
-    - [Get Remote Branches](#get-remote-branches)
-    - [Checkout Previous Branch](#checkout-previous-branch)
-    - [Rename Branch](#rename-branch)
-    - [Rename Remote Branch](#rename-remote-branch)
-    - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
-    - [List Merged Branches](#list-merged-branches)
-    - [Delete Remote Branch/Tag](#delete-remote-branchtag)
+  - [Create New Branches](#create-new-branches)
+  - [Get Remote Branches](#get-remote-branches)
+  - [Checkout Previous Branch](#checkout-previous-branch)
+  - [Rename Branch](#rename-branch)
+  - [Rename Remote Branch](#rename-remote-branch)
+  - [Delete Local Remote-Tracking Branches](#delete-local-remote-tracking-branches)
+  - [List Merged Branches](#list-merged-branches)
+  - [Delete Remote Branch/Tag](#delete-remote-branchtag)
 - [Refs](#refs)
-    - [Get Current SHA1](#get-current-sha1)
+  - [Get Current SHA1](#get-current-sha1)
 - [Commits](#commits)
-    - [Stage Files](#stage-files)
-    - [Unstage Files](#unstage-files)
-    - [Commit Staged Changes](#commit-staged-changes)
-    - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
-    - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
-    - [Amend Commits](#amend-commits)
-    - [Empty Commit](#empty-commit)
+  - [Stage Files](#stage-files)
+  - [Unstage Files](#unstage-files)
+  - [Commit Staged Changes](#commit-staged-changes)
+  - [Undo Local Commits With `git reset`](#undo-local-commits-with-git-reset)
+  - [Undo Public Commits With `git revert`](#undo-public-commits-with-git-revert)
+  - [Amend Commits](#amend-commits)
+  - [Amend Commit Author](#amend-commit-author)
+  - [Empty Commit](#empty-commit)
 - [Stashing](#stashing)
 - [Tags](#tags)
 - [Log](#log)
-    - [Ranges](#ranges)
-    - [Formatting](#formatting)
+  - [Ranges](#ranges)
+  - [Formatting](#formatting)
 - [Git Clean (new!)](#git-clean-new)
 - [Vimdiff (new!)](#vimdiff-new)
 - [Submodules (new!)](#submodules-new)
@@ -238,6 +239,12 @@ git commit -c ORIG_HEAD
 ```
 
 _Be aware of the implications of rewriting history when changing commits that have already been pushed to a remote. See also: [git-rebase](https://git-scm.com/docs/git-rebase)._
+
+### Amend Commit Author
+
+TODO Amend commit author name and email with `git rebase`.
+
+- https://stackoverflow.com/a/3042512
 
 ### Empty Commit
 

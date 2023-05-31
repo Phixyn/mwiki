@@ -12,6 +12,7 @@ layout: page
 
 - [Overview](#overview)
 - [Linux Mint and Ubuntu Installation](#linux-mint-and-ubuntu-installation)
+- [Cheatsheet](#cheatsheet)
 
 - - -
 
@@ -52,3 +53,9 @@ Verify it's installed and in `$PATH` with: `command -v kubectl`.
 - - -
 
 Other installation options: [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+
+## Cheatsheet
+
+```sh
+kubectl api-resources
+```

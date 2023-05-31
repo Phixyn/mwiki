@@ -83,6 +83,7 @@ layout: page
 kcachegrind reading cProfile data converted with `pyprof2calltree`:
 
 ```sh
+# TODO add linux cmds
 brew install qcachegrind --with-graphviz
 pip3 install pyprof2calltree
 

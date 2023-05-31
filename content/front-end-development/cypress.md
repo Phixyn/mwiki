@@ -23,9 +23,12 @@ layout: page
 - [Actions](#actions)
 - [Assertions](#assertions)
 - [Best Practices](#best-practices)
+- [Debugging](#debugging)
 - [Docs](#docs)
+- [Examples and Recipes](#examples-and-recipes)
 - [Articles](#articles)
 - [Component Testing](#component-testing)
+- [Plugins](#plugins)
 
 - - -
 
@@ -54,7 +57,7 @@ $ yarn add --dev cypress
 }
 ```
 
-See also: [Installing Cypress | Cypress Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress.html)  
+> See also: [Installing Cypress | Cypress Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress.html)  
 
 ### Folder Structure
 
@@ -65,7 +68,7 @@ Running Cypress for the first time will create example files within a standard f
 
 Additionally, two folders called **Plugins** and **Support** will be generated. These will contain Javascript files with commented explanations and examples about Cypress plugins, custom commands, configuration, etc.
 
-See also: ["What files should I add to my '.gitignore file'?"](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests.html#Configuring-Folder-Structure)  
+> See also: ["What files should I add to my '.gitignore file'?"](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests.html#Configuring-Folder-Structure)  
 
 ### Configuration
 
@@ -103,7 +106,7 @@ cy.get('[data-testid="triangle"]');
 cy.get("#parent-element").find("#child-element");
 ```
 
-See also: [Cypress basics: Selecting elements - Filip Hric](https://filiphric.com/cypress-basics-selecting-elements)
+> See also: [Cypress basics: Selecting elements - Filip Hric](https://filiphric.com/cypress-basics-selecting-elements)
 
 ### Get vs. Find
 
@@ -135,10 +138,26 @@ cy.get("#some-button").click();
 
 ## Assertions
 
+[Assertions | Cypress Documentation](https://docs.cypress.io/guides/references/assertions)
+
+**Assert that the element's text content is _exactly_ the given text:**
+
+```javascript
+cy.get('#user-name').should('have.text', 'Joe Smith');
+```
+
+**Assert that the element's text _includes_ a given substring:**
+
+```javascript
+cy.get('#address').should('include.text', 'Atlanta');
+```
+
+**Chaining assertions with `and()`:**
+
 ```javascript
 cy.get("#some-element")
   .should("have.class", "class-name")
-  .should("be.visible");
+  .and("be.visible");
 ```
 
 **Testing element attributes:**
@@ -159,6 +178,8 @@ cy.get("#text-input")
   .should("contain", "Add task...");
 ```
 
+> See also: [Implicit Subjects](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Implicit-Subjects) vs [Explicit Subjects](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Explicit-Subjects)
+
 ## Best Practices
 
 [Best Practices | Cypress Documentation](https://docs.cypress.io/guides/references/best-practices.html)  
@@ -175,6 +196,12 @@ cy.get("#text-input")
   - Test specs in isolation, programmatically log into your application, and take control of your application's state
   - See also: [Logging in examples](https://github.com/cypress-io/cypress-example-recipes#logging-in-recipes)
 
+## Debugging
+
+Using [`cy.pause()`](https://docs.cypress.io/api/commands/pause) is helpful to debug. It can also be chained off other commands.
+
+> See also: [`debug()`](https://docs.cypress.io/api/commands/debug) and [`debugger`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger)
+
 ## Docs
 
 [Writing and Organizing Tests | Cypress Documentation](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests.html#Folder-Structure)  
@@ -182,11 +209,22 @@ cy.get("#text-input")
 [Kitchen Sink](https://example.cypress.io/commands/querying)  
 [Custom Commands | Cypress Documentation](https://docs.cypress.io/api/cypress-api/custom-commands.html)  
 
+## Examples and Recipes
+
+[Recipes | Cypress Documentation](https://docs.cypress.io/examples/examples/recipes)  
+[cypress-example-recipes: Various recipes for testing common scenarios with Cypress](https://github.com/cypress-io/cypress-example-recipes)  
+
 ## Articles
 
 [Getting Started with End-to-End Tests in React using Cypress | Codementor](https://www.codementor.io/@blizzerand/manjunath-getting-started-with-end-to-end-tests-in-react-using-cypress-smtfkr5cv)  
 [Modern Front-End Testing with Cypress](https://www.cypress.io/blog/2019/02/05/modern-frontend-testing-with-cypress/)  
+[Testing React + Firebase Apps With Cypress](https://prescottprue.medium.com/testing-react-firebase-apps-with-cypress-7d7a64d155de)  
 
 ## Component Testing
 
 See: [Component Testing Introduction | Cypress Documentation](https://docs.cypress.io/guides/component-testing/introduction.html)  
+
+## Plugins
+
+[cypress-commands: A collection of Cypress commands to extend and complement the defaults](https://github.com/Lakitna/cypress-commands)  
+[cypress-firebase: Utilities to help testing firebase projects with cypress.](https://github.com/prescottprue/cypress-firebase)  

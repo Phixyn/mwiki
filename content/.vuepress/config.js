@@ -44,6 +44,7 @@ module.exports = {
           "/front-end-development/vue-js",
           "/front-end-development/gridsome",
           "/front-end-development/react",
+          "/front-end-development/angular",
           "/front-end-development/cypress",
           "/front-end-development/foundation"
         ]
@@ -60,14 +61,23 @@ module.exports = {
         title: "SysAdmin",
         children: [
           "/sysadmin/docker",
-          "/sysadmin/nginx"
+          "/sysadmin/nginx",
+          "/sysadmin/amazon-web-services",
+          "/sysadmin/google-cloud-platform"
         ]
       },
       {
         title: "Kubernetes",
         children: [
+          "/kubernetes/kubernetes",
           "/kubernetes/kubectl",
           "/kubernetes/minikube"
+        ]
+      },
+      {
+        title: "Databases",
+        children: [
+          "databases/mongodb"
         ]
       },
       {
