@@ -25,6 +25,9 @@ layout: page
 - [Building Images + Running Containers](#building-images--running-containers)
 - [Interacting With Containers](#interacting-with-containers)
 - [Compose](#compose)
+- [Portainer](#portainer)
+    - [Server](#server)
+    - [Agent](#agent)
 
 - - -
 
@@ -188,20 +191,22 @@ sudo apt install docker-compose
 
 ## Building Images + Running Containers
 
-Run Docker image built with env vars for Google Production Cluster:
+> TODO: WIP
+
+Run Docker image built with env vars:
 
 ```sh
-docker run --detach --name mongo_api_google_prod --publish 14000:3000 --env-file <mongo-api-folder>/.env-google-prod-user mongo-api:local-latest
+docker run --detach --name container_name --publish 14000:8080 --env-file <path/to/.env> image-name:tag-name
 # Subsequent runs (start same container)
-docker start mongo_api_google_prod
+docker start container_name
 # Check env vars
-docker inspect mongo_api_google_prod
+docker inspect container_name
 ```
 
 To update the image, build it with
 
 ```sh
-docker build --tag mongo-api:local-latest .
+docker build --tag image-name:tag-name .
 ```
 
 ## Interacting With Containers
@@ -217,3 +222,33 @@ docker-compose build --no-cache <service-1> <service-2>
 # At next docker-compose up, containers using old images will be re-created
 # with the new image.
 ```
+
+## Portainer
+
+[https://github.com/portainer/portainer](https://github.com/portainer/portainer)
+
+> Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. It is designed to be as simple to deploy as it is to use. The application allows you to manage all your orchestrator resources (containers, images, volumes, networks and more) through a ‘smart’ GUI and/or an extensive API.
+
+### Server
+
+[https://docs.portainer.io/start/install-ce/server/docker/linux](https://docs.portainer.io/start/install-ce/server/docker/linux)
+
+Create the volume that Portainer Server will use to store its database:
+```sh
+docker volume create portainer_data
+# Verify
+docker volume ls
+```
+
+Download and install the Portainer Server container:
+```sh
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+[https://localhost:9443](https://localhost:9443)
+
+### Agent
+
+[https://docs.portainer.io/admin/environments/add/docker/agent](https://docs.portainer.io/admin/environments/add/docker/agent)
+
+Open [https://localhost:9443](https://localhost:9443), set up account and then click Get Started to use local Docker environment. Or add another Docker environment by clicking the other button :D
